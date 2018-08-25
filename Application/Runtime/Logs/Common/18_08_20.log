@@ -1,0 +1,126 @@
+[ 2018-08-20T12:04:24+08:00 ] 111.40.30.232 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-08-20T12:04:28+08:00 ] 111.40.30.232 /images/zoom-tblr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+ERR: 无法加载模块:Images
+
+[ 2018-08-20T12:04:31+08:00 ] 111.40.30.232 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-08-20T12:04:32+08:00 ] 111.40.30.232 /Application/Home/bg/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+ERR: 无法加载模块:Application
+
+[ 2018-08-20T12:04:50+08:00 ] 111.40.30.232 /Common/GetAllCarSeat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+ERR: 无法加载模块:Common
+
+[ 2018-08-20T12:04:52+08:00 ] 111.40.30.232 /Application/Home/bg/ui-bg_gloss-wave_35_00A600_500x100.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2018-08-20T12:04:52+08:00 ] 111.40.30.232 /Application/Home/bg/ui-bg_highlight-soft_75_00A600_1x100.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+ERR: 无法加载模块:Application
+
+[ 2018-08-20T12:05:03+08:00 ] 111.40.30.232 /Scripts/CustomJS/config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+ERR: 无法加载模块:Scripts
+
+[ 2018-08-20T12:05:07+08:00 ] 111.40.30.232 /Application/Home/js/dateinput-ch-ZN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+ERR: 无法加载模块:Application
+
+[ 2018-08-20T12:13:45+08:00 ] 111.40.30.232 /Common/GetAllCarSeat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Common
+
+[ 2018-08-20T12:14:20+08:00 ] 111.40.30.232 /Scripts/CustomJS/config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+ERR: 无法加载模块:Scripts
+
+[ 2018-08-20T12:15:04+08:00 ] 111.40.30.232 /Application/Home/js/dateinput-ch-ZN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+ERR: 无法加载模块:Application
+
+[ 2018-08-20T15:52:49+08:00 ] 127.0.0.1 /images/zoom-tblr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Images
+
+[ 2018-08-20T15:52:53+08:00 ] 127.0.0.1 /Common/GetAllCarSeat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Common
+
+[ 2018-08-20T15:52:57+08:00 ] 127.0.0.1 /Application/Home/bg/ui-bg_gloss-wave_35_00A600_500x100.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2018-08-20T15:52:57+08:00 ] 127.0.0.1 /Application/Home/bg/ui-bg_highlight-soft_75_00A600_1x100.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+ERR: 无法加载模块:Application
+
+[ 2018-08-20T15:53:09+08:00 ] 127.0.0.1 /Scripts/CustomJS/config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Scripts
+
+[ 2018-08-20T15:53:09+08:00 ] 127.0.0.1 /Scripts/CustomJS/config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Scripts
+
+[ 2018-08-20T15:58:59+08:00 ] 127.0.0.1 /Common/GetAllCarSeat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Common
+
+[ 2018-08-20T15:59:32+08:00 ] 127.0.0.1 /images/pay.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2018-08-20T17:01:04+08:00 ] 127.0.0.1 /Common/GetAllCarSeat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Common
+

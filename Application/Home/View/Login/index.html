@@ -1,0 +1,94 @@
+<include file="Common:head" />
+<link href="/Application/Home/css/7b9256e54a0541c0937ce98ffb4b3d7c.css" rel="stylesheet" />
+
+<style>
+        .comm a:hover{
+            background-color: #009100;
+        }
+        
+            nav {
+                background: #93D400;
+                height: 45px;
+                line-height: 45px;
+                border-bottom: 1px solid #93D400;
+                border-top: 1px solid #93D400;
+                min-width: 1003px;
+                display: block;
+            }
+
+            nav a:hover, nav a.cur {
+                background: #009100;
+            }
+
+
+            footer .foot li.center p {
+                font-size: 24px;
+                color: black;
+                font-weight: bold;
+                float: left;
+                margin: 120px 10px 0 10px;
+            }
+
+            footer .foot li.center span {
+                background: #009100;
+                border-radius: 4px;
+                font-weight: normal;
+                line-height: 14px;
+                padding: 4px;
+                font-size: 15px;
+                color: #fff;
+                display: inline-block;
+                vertical-align: -3px;
+                margin-right: 4px;
+            }
+
+            header .top .login_reg {
+                border-radius: 3px;
+                background: #00A600;
+                width: 120px;
+                height: 30px;
+                position: absolute;
+                top: 75px;
+                right: 0;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+            }
+        </style>
+        <nav>
+            <div class="comm">
+                <a href="{:U('Index/index')}">首页</a>
+                <a class=""  href="{:U('Order/travel')}">在线订车</a>
+                <a href="{:U('Order/rent_travel')}">日租包车</a>
+                <a href="{:U('Order/shuttle_travel')}">接机/送机</a>
+            </div>
+        </nav>
+        
+            <body>
+                <div class="comm login">
+                    <div>
+                        <h2>会员登录</h2>
+                        <span name="hid1" id="hid1" style="color: #009100; height: 20px; display: block; font-size: 12px"></span>
+                        <form action="{:U('Index/login_send')}" id="login_form" method="post" name="login_form">
+                            <input name="__RequestVerificationToken" type="hidden" value="okGfHtIyyCOvi99w--nrZ0ilnGtJ6Rp73T_-2xCmcZKVdoonNHFkNnB23WAtUyCnmLjoAdB3hlZgP1aWeRjeiLZPRHE1" />
+                            <input class="txt" data-val="true" data-val-required="请输入用户名" id="UserName" name="login_name" placeholder="输入登录名/注册手机" type="text" value="" />
+                            <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="false"></span>
+                            <input class="txt" data-val="true" data-val-required="请输入密码" id="Password" name="password" placeholder="输入密码" type="password" />
+                            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="false"></span>
+                            <p>
+                                <input type="checkbox" name="auto" id="auto">
+                                <label for="auto">自动登录</label>
+                                <a class="forget" href="http://www.5bus.cn/Reg/Forget">忘记密码？</a></p>
+                            <button style="cursor: pointer" class="submit" id="loginSystem" value="登录">登录</button>
+                            <p style="border-bottom: 1px dashed #ccc;">还不是运来出行用户？
+                                <a class="reg" href="{:U('Index/reg')}">免费注册</a></p>
+                            <p style="font-size: 14px; text-align: center; padding-top: 10px; line-height: 200%">&nbsp;&nbsp;
+                                <!--<a href=""><img src="img/loginbutton_24.png" title="点击进入授权页面" alt="点击进入授权页面" border="0"/></a>--></p></form>
+                    </div>
+                </div>
+            </body>
+        
+        </html>
+        <br/>
+        <script type="text/javascript">document.createElement("footer");</script>
+<include file="Common:foot" />

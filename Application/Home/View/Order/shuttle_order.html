@@ -1,0 +1,256 @@
+<include file="Common:head" />
+<nav>
+	<div class="comm">
+		<a class="" href="{:U('Index/index')}">首页</a>
+		<a class="" href="{:U('Order/travel')}">在线订车</a>
+		<a class="" href="{:U('Order/rent_order')}">日租包车</a>
+		<a class="index" href="{:U('Order/shuttle_order')}">接机/送机</a>
+	</div>
+</nav>
+
+	<script src="/Application/Home/js/easyresponsivetabs.js"></script>
+	<link href="/Application/Home/css/easy-responsive-tabs.css" rel="stylesheet" />
+	<script src="/Application/Home/js/jquery-ui.min.js"></script>
+	<link href="/Application/Home/css/jquery-ui.css" rel="stylesheet" />
+	<script src="/Application/Home/js/dateinput-ch-zn.js"></script>
+	<script src="/Application/Home/js/transfer.js"></script>
+	<link href="/Application/Home/css/transfer.css" rel="stylesheet" />
+	<link href="/Application/Home/css/order.css" rel="stylesheet" />
+	<script src="/Application/Home/js/commonapi.js"></script>
+	<script src="/Application/Home/js/transferhtml.js"></script>
+	<style type="text/css" rel="stylesheet">
+		body {
+			background: #fff;
+		}
+
+		#container {
+			width: 1000px;
+			margin: 0 auto;
+		}
+	</style>
+	<script>
+
+
+                // if (!ValidateTime()) {
+                //     var hh = (parseInt(new Date().Format("hh")) - 11).toString();
+                //     if (hh.length < 2) hh = "0" + hh;
+                //     $('#hours').val(hh);
+                // }
+
+		var storeClick = function () {
+			getTime();
+			$(".pickup").addClass("cur");
+			$(function () {
+				$("#dayrent").addClass("cur");
+
+				$("#days").val(1);
+				$('.hours').append(hourstxt);
+				$('.minutes').append(minutestxt);
+
+				//if (!ValidateTime()) {
+				//    var hh = (parseInt(new Date().Format("hh")) - 11).toString();
+				//    if (hh.length < 2)
+				//        hh = "0" + hh;
+				//    $('#hours').val(hh);
+				//}
+
+
+
+				if ($.browser.msie) {
+					$('input:checkbox').click(function () {
+						this.blur();
+						this.focus();
+					});
+				}
+				$(".date").each(function () {
+					$(this).datepicker({
+						minDate: new Date()
+					});
+				});
+
+			});
+		}
+
+	</script>
+
+
+	<link href="/Application/Home/css/tip-yellow.css" rel="stylesheet" />
+	<link href="/Application/Home/css/tip-yellowsimple.css" rel="stylesheet" />
+	<script src="/Application/Home/js/jquery.poshytip.js"></script>
+	<style>
+		.dailyhide {
+			display: none;
+		}
+
+		.dailyextend {
+			display: block;
+		}
+	</style>
+
+	<div class="comm book">
+		<div class="" style="width: 1000px; margin: auto" id="divmaincontent">
+			<div id='container'>
+				<p class="breadCrumbs">
+					<a href="/Home/Default" target="_blank">运来出行 </a>&nbsp;&gt;&nbsp;
+					<a href="#" target="_blank">
+						<span id="cnm-wrap">接送机</span>
+					</a>&nbsp;&gt;&nbsp;
+					<span id="nested-tabInfo">接机</span>
+				</p>
+				<!--Horizontal Tab-->
+				<div id="parentHorizontalTab">
+					<ul class="resp-tabs-list hor_1">
+						<li id="pick_up">接机</li>
+						<li id="drop_off">送机</li>
+						<li id="pick_train">接火车</li>
+						<li id="drop_train">送火车</li>
+					</ul>
+					<div class="resp-tabs-container hor_1">
+						<div class="pick_up">
+							<dl class="jsj-address">
+								<dt>接机机场</dt>
+								<dd class="select-city">
+									<div class="drop-down-icon">
+										<input type="hidden" value="10007" name=cityID id="cityID" cid="197" lonlat="113.349405,23.240716" />
+										<input style="width: 80px; height: 18px" type="text" class="txt cityTransferAddress" value="广州机场" name="stravel_start">
+										<div class="citylistAddress" name="airport"></div>
+
+									</div>
+								</dd>
+								<dt style="margin-left: 100px;">用车时间</dt>
+								<dd class="select-time">
+									<input type="text" id="datepicker4" name="datepicker4" readonly="readonly" class="txt date">
+									<select class="select hours" name="hours" id="hours"></select>
+									:
+									<select class="select minutes" name="minutes" id="minutes"></select>
+									<!-- <input type="text" id="datepicker4" name="transport_time" readonly="readonly" onchange="InitData()" value="" class="txt date">
+									<select class="select hours" name="hours" id="hours" onchange="InitData()"></select>:
+									<select class="select minutes" name="minutes" id="minutes" onchange="InitData()"></select></dd> -->
+								</dd>
+
+								<div class="clear"></div>
+
+							</dl>
+							<dl class="jsj-city">
+								<dt>送达地点</dt>
+								<dd class="select-city">
+									<div class="drop-down-icon">
+										<input type="hidden" name="travel-cityid" value="197" id="travel-cityid" />
+										<input type="text" class="city" value="广州" id="travel-start" name="travel_end">
+										<div class="citylist" style="display: none;">
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="part">
+										<input type="text" class="txt place input" id="travel-address" name="travel_end_address" placeholder="请输入附近的小区/街道/建筑物/商圈" style="width: 300px; margin-left: -10px;"
+										 autocomplete="off">
+										<input type="hidden" class="hasquery" value="0" />
+										<input type="hidden" class="jw" id="fromjw" name="travel[1][fromjw]" value="" />
+										<input name="travel[1][fromaddr]" class="addr" type="hidden" id="fromaddr" size="57" />
+										<div style="display: none" id="result3" class="result"> Loading... </div>
+									</div>
+								</dd>
+								<div class="cartlist">
+									<input type="button" class="addday" id="searchProduct" value="搜索" style="float: right">
+								</div>
+								<div style="clear: both"></div>
+							</dl>
+						</div>
+						<div class="drop_off">
+						</div>
+						<div class="pick_train">
+						</div>
+						<div class="drop_train">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div style="display: none">
+				<input type="text" waitting="0.5" freeCancel="1" id="userAccount" />
+				<input type="text" id="contactPhone" />
+
+			</div>
+			<div id="filter" style="display: block; margin-top: 10px; margin-left: -35px">
+				<ul class="cl_filter" style="width: 1000px;">
+					<li class="clearfix vehicle-list">
+						<span class="fl">车型</span>
+						<a class="fl all current" href="javascript:void(0);" onclick="AllClick(this, 1)">不限</a>
+
+						<div class="fl filter_list" style="width: 800px">
+						</div>
+					</li>
+					<li class="clearfix bbn vendor-list" style="display: none">
+						<span class="fl">服务商</span>
+						<a class="fl all current" href="javascript:void(0);" onclick="AllClick(this, 2)">不限</a>
+
+						<div class="fl filter_list">
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cl_trip clearfix" style="display:none">
+				<b id="guessTime"></b>
+				<b id="guessMiles"></b>
+			</div>
+			<div class="plist" style="width: 1000px; margin-left: -1px;">
+
+
+			</div>
+		</div>
+		<div class="clear"></div>
+
+	</div>
+
+
+	<!--Plug-in Initialisation-->
+	<script type="text/javascript">
+
+		//$(".date").each(function () {
+		//    $(this).datepicker({
+		//        minDate: new Date()
+		//    });
+		//});
+		$("#searchProduct").bind('click', function () {
+			InitData();
+
+		});
+
+		function checkLogin() {
+			var user_id = "{$_SESSION['user_id']}";
+                if(!user_id) {
+                    layer.msg('请先登录');
+                    return false;
+                }
+                return true;
+		}
+
+		$(function () {
+				var hh = (parseInt(new Date().Format("hh")) - 11).toString();
+                var date = "<?php echo date('Y-m-d',strtotime('+1 day'));?>";
+                // console.log(date);
+                $("#dayrent").addClass("cur");
+                // $("#cityID").val(60);
+                // $("#cityName").val("哈尔滨");
+                // $("#days").val(1);
+                $('.hours').append(hourstxt);
+                $('.minutes').append(minutestxt);
+                $('#datepicker4').val(date);
+
+                if (!ValidateTime()) {
+                    var hh = (parseInt(new Date().Format("hh")) - 11).toString();
+                    if (hh.length < 2) hh = "0" + hh;
+                    $('#hours').val(hh);
+                }
+			storeClick();
+		});
+	</script>
+
+
+
+
+	<br />
+	<include file="Common:foot" />

@@ -1,0 +1,331 @@
+<include file="Common:head" />
+<block name="main">
+    <nav>
+        <div class="comm">
+            <a href="{:U('Index/index')}">首页</a>
+            <a class="index" href="{:U('Order/travel')}">在线订车</a>
+            <a href="{:U('Order/rent_order')}">日租包车</a>
+            <a href="{:U('Order/shuttle_order')}">接机/送机</a></div>
+    </nav>
+    <script>
+        $(function() {
+            window.distance_i = 0;
+            window.distance_j = 0;
+            $('.agreement').on('click',
+            function() {
+                layer.open({
+                    type: 2,
+                    title: '运来出行协议',
+                    skin: 'layui-layer-rim',
+                    //加上边框
+                    shift: '2',
+                    area: ['800px', '560px'],
+                    content: "/Home/Common/agreement" //iframe的url
+                });
+            });
+        })
+    </script>
+    <style type="text/css">.user-select-show ul li { width: 354px; min-height: 190px; display: block; background-color: #eeeeed; border-radius: 5px; line-height: 25px; padding-bottom: 15px; margin-top: 20px; } .user-select-show ul li dd hr { margin-left: -35px; } .user-select-show ul li .pickup-show { font-size: 14px; margin-left: -10px; } .textarea { border: 1PX solid #eeeeed; background: #eeeeed; margin-left: -30px; border-radius: 5px; height: 100px; width: 500px; padding: 4px; } .comm .user-select-show .daily { width: 300px; margin-left: 35px; padding: 5px; height: 25px; background: #00A600; color: #fff; border: 1px solid #009100; cursor: pointer; border-radius: 4px; margin-bottom: 10px; } .comm .user-select-show .daily:hover { background: #007500; } .coordinate{}</style>
+    <div class="comm step mb20">
+        <dl>
+            <dd>
+                <span class="ml25">1.</span>选择用车方式
+                <em></em>
+                <i>
+                </i>
+            </dd>
+            <dd>
+                <span>2.</span>选择车型
+                <em></em>
+                <i>
+                </i>
+            </dd>
+            <dt>
+                <span>3.</span>填写租车人信息
+                <em></em>
+                <f>
+                </f>
+                <i>
+                </i>
+            </dt>
+        </dl>
+    </div>
+    <div class="comm">
+        <div class="select-car">
+            <span>填写信息</span></div>
+        <div class="arrow-down ml26"></div>
+        <form action="{:U('Order/travel_order_info')}" id="main_form" method="post" name="main_form">
+            <input name="__RequestVerificationToken" type="hidden" value="hUf3vijVWqNkRD0lpHi6BnbURfw9RX04QpRaw2x14Me4Hn6Vz0HWd88XZc8vf9vPqBLFVMqi_uLKbd8UcA-LJOWEq_U1" />
+            <input type="hidden" name="CarType" value="oneway" />
+            <input type="hidden" name="pickDate" value="2018-07-25" />
+            <input type="hidden" name="CarSeatID" value="17" />
+            <input type="hidden" name="CarCount" value="6" />
+            <input type="hidden" name="fromType" value="" />
+            <input type="hidden" name="thirdOrderNO" value="" />
+            <input type="hidden" name="DayCount" value="1" />
+            <input type="hidden" name="DayCarLine[1]" value="3" />
+            <input type="hidden" name="DayDate[1][1]" id="DayDate[1][1]" value="2018-07-25" />
+            <input type="hidden" name="Hour[1][1]" id="Hour[1][1]" value="4">
+            <input type="hidden" name="Minutes[1][1]" id="Minutes[1][1]" value="40">
+            <input type="hidden" name="CityID[1][1]" id="CityID[1][1]" value="199">
+            <input type="hidden" name="CityName[1][1]" id="CityName[1][1]" value="深圳">
+            <input type="hidden" name="AddressName[1][1]" id="AddressName[1][1]" value="A one大厦">
+            <input type="hidden" name="AddressDetail[1][1]" id="AddressDetail[1][1]" value="广东省深圳市龙华区腾龙路隔圳新村Aone商务大厦">
+            <input type="hidden" name="distance[1][1]" id="distance[1][1]" value="">
+            <input type="hidden" name="DayDate[1][2]" id="DayDate[1][2]" value="2018-07-25" />
+            <input type="hidden" name="Hour[1][2]" id="Hour[1][2]" value="4">
+            <input type="hidden" name="Minutes[1][2]" id="Minutes[1][2]" value="40">
+            <input type="hidden" name="CityID[1][2]" id="CityID[1][2]" value="74">
+            <input type="hidden" name="CityName[1][2]" id="CityName[1][2]" value="南京">
+            <input type="hidden" name="AddressName[1][2]" id="AddressName[1][2]" value="A3路">
+            <input type="hidden" name="AddressDetail[1][2]" id="AddressDetail[1][2]" value="江苏省南京市浦口区">
+            <input type="hidden" name="distance[1][2]" id="distance[1][2]" value="">
+            <input type="hidden" name="DayDate[1][3]" id="DayDate[1][3]" value="2018-07-25" />
+            <input type="hidden" name="Hour[1][3]" id="Hour[1][3]" value="4">
+            <input type="hidden" name="Minutes[1][3]" id="Minutes[1][3]" value="40">
+            <input type="hidden" name="CityID[1][3]" id="CityID[1][3]" value="2">
+            <input type="hidden" name="CityName[1][3]" id="CityName[1][3]" value="天津">
+            <input type="hidden" name="AddressName[1][3]" id="AddressName[1][3]" value="万达广场写字楼-A座">
+            <input type="hidden" name="AddressDetail[1][3]" id="AddressDetail[1][3]" value="津滨大道36号">
+            <input type="hidden" name="distance[1][3]" id="distance[1][3]" value="">
+            <input type="hidden" name="AddressJW[1][1]" id="AddressJW[1][1]" class="coordinate" value="22.640439,114.024804">
+            <input type="hidden" name="AddressJW[1][2]" id="AddressJW[1][2]" class="coordinate" value="32.185941,118.740337">
+            <input type="hidden" name="AddressJW[1][3]" id="AddressJW[1][3]" class="coordinate" value="39.130479,117.260003">
+            <input type="hidden" name="AddressJW[1][4]" id="AddressJW[1][4]" class="coordinate" value="">
+
+
+            <input type="hidden" name="rental_type" value="{$rental_type}">
+            <input type="hidden" name="order_type" value="{$order_type}">
+            <input type="hidden" name="car_id" value="{$car_id}">
+            <input type="hidden" name="car_number" value="{$car_number}">
+            <input type="hidden" name="transport_data" value="{$transport_data}">
+
+
+
+            <div class="userinfo-formline">
+                <ul>
+                    <li>
+                        <label class="label">租车人</label>
+                        <div class="fill-userinfo">
+                            <div class="drop-down-icon">
+                                <span>
+                                    <em>
+                                        <input type="text" id="ContactName" name="travel_username" placeholder="请输入租车人姓名" value="{$user.user_name}" maxlength="20"></em>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="floatingLeft" style="display:none">
+                            <!--<label><input type="checkbox" name="save_user" id="save_user" checked value="on" class="vm"/> 保存至常用联系人</label>--></div>
+                        <span class="c_red2 w98 xs2" id="hirer_name_tips" style="display:none;">租车人姓名不能为空</span>
+                        <div class="clean-status"></div>
+                    </li>
+                    <li>
+                        <label class="label">手机号码</label>
+                        <div class="fill-userinfo">
+                            <span>
+                                <em>
+                                    <input type="text" id="contractPhone" name="travel_mobile" placeholder="请输入租车人手机号码" value="{$user.mobile}" maxlength="20" style="width:190px"></em>
+                            </span>
+                        </div>
+                        <div class="floatingLeft" style="display:none">
+                            <!-- <label><input type="checkbox" name="save_user" id="save_user" checked value="on" />租车人免费接收提示短信</label>--></div>
+                        <span class="c_red2 tips tips2 xs2" id="hirer_phone_tips" style="display:none;">手机号不能为空</span>
+                        <div class="clean-status"></div>
+                    </li>
+                    <li>
+                        <label class="label">通知车队</label>
+                        <input style="margin-left: -30px" type="checkbox" name="notifyCarTeam" value="true" checked="checked" />短信通知服务车队报价</li>
+                    <li>
+                        <label class="label">供应商等级</label>
+                        <select id="OrderLevel" name="order_level">
+                            <option value="0">不限</option>
+                            <option value="1">1级</option>
+                            <option value="2">2级</option>
+                            <option value="3">3级</option></select>
+                        <script></script>
+                    </li>
+                    <li>
+                        <label class="label">服务留言</label>
+                        <textarea name="remark" id="remark" class="textarea" placeholder="例：有小孩一同乘坐，请开慢点。"></textarea>
+                        <span class="c_red2 tips tips2 xs2" id="hirer_phone_tips" style="display:none;">手机号不能为空</span>
+                        <div class="clean-status"></div>
+                    </li>
+                    <li style="margin-top:20px; margin-left:90px;">
+                        <label>
+                            <input type="checkbox" name="save_user" id="save_user" checked="" value="on">同意</label>
+                        <a href="javascript:;" class="aLink agreement">《运来出行服务协议》</a></li>
+                    <li style="display:none">
+                        <label class="label">结算方式</label>
+                        <label>
+                            <input type="radio" name="payment[]" id="payment" value="月结">月结</label>
+                        <label>
+                            <input type="radio" name="payment[]" id="payment" value="网上支付" checked="checked">网上支付</label></li>
+                    <li style="margin-top:40px; margin-left:90px;">
+                        <input type="submit" class="submit" value="提交" onclick="layer.load();"></li>
+                </ul>
+            </div>
+
+        <!--right-->
+        <div class="user-select-show">
+            <ul>
+                <li>
+                    <dt class="cartype-back">
+                        <a href="#" onClick="javaScript:history.go(-1)">返回修改</a></dt>
+                    <div class="pickup-show">
+                        <!--<dd>用车方式：</dd>
+                        <dd>用车时间：</dd>
+                        <dd>结束时间：</dd>-->
+                        <dd>用车方式：
+                            <if condition="$rental_type eq 0">单程
+                            <else/>往返
+                            </if>
+                        </dd>
+                        <span class="travel"></span>
+                        <foreach name="travel" item="list" key="k">
+                            <div class="daily" name="daily" day="1">第{$k}天行车线路</div>
+                            <div id="divtravel" name="divtravel" show="1" style="display: block;">
+                                <dd>时间：{$list.date.0} {$list.hours.0}:{$list.minutes.0}
+                                    <!-- <input type="hidden" name="travel[{$k}][date][]" value="{$list.date.0} {$list.hours.0}:{$list.minutes.0}" /> -->
+                                </dd>
+                                <dd>起点：{$list.travel_start}
+                                        <!-- <input type="hidden" value="{$list.travel_start}" name="travel[{$k}][travel_start]"> -->
+                                </dd>
+                                <dd>地点：{$list.travel_address}
+                                        <!-- <input type="hidden" name="travel[{$k}][travel_address]" value="{$list.travel_address}"> -->
+                                </dd>
+                                <dd>地址：{$list.fromaddr}</dd>
+                                    <dd>↓&nbsp;&nbsp;
+                                    <span id="e-distance11" class='distance'></span></dd>
+                                <for start="1" end="$list.total" comparison="elt">
+                                    <dd>时间：{$list.date.0} {$list.hours.0}:{$list.minutes.0}</dd>
+                                        <dd>途径：{$list["path$i"]}</dd>
+                                        <dd>地点：{$list["pathname$i"]}</dd>
+                                        <dd>地址：{$list["pathaddr$i"]}</dd>
+                                        <dd>↓&nbsp;&nbsp;
+                                            <span id='e-distance12' class='distance'></span></dd>
+                                </for>
+                                <dd>时间：{$list.date.0} {$list.hours.0}:{$list.minutes.0}</dd>
+                                <dd>终点：{$list.travel_end}</dd>
+                                <dd>地点：{$list.end_address}</dd>
+                                <dd>地址：{$list.toaddr}</dd>
+                            </div>
+                        </foreach>
+                    </div>
+                </li>
+                <li style=" width:354px; min-height:80px;display:block; background-color:#eeeeed; border-radius:5px; margin-bottom:30px;  ">
+                    <dd style=" position:relative; margin-top:20px; ">
+                        <div style="position:absolute; margin-top:20px; margin-left:-20px; ">
+                            <div class="icons-phone"></div>
+                        </div>
+                        <div></div>
+                    </dd>
+                    <dd style="float:right; width:250px; font-size:16px; margin: 20px 0px 0 10px;">如需帮助请咨询</dd>
+                    <dd>
+                        <span style="color:#009100; margin-left:60px; font-size:16px">189-2237-8000</span></dd>
+                </li>
+            </ul>
+        </div>
+        <div class="clean-status"></div>
+    </div>
+</form>
+    <script src="/Scripts/CustomJS/config.js"></script>
+    <script>$(function() {
+
+
+            $("[name=daily]").eq(0).next("#divtravel").css('display', 'block');
+
+            $("[name=daily]").live('click',
+            function() {
+                $(this).next("#divtravel").slideToggle("fast").siblings("#divtravel:visible").slideUp("fast");
+            });
+            
+            $.distance = function(fromjw, tojw, i, j) {
+                //var result=2;
+                $.ajax({
+                    url: 'http://api.map.baidu.com/direction/v1/routematrix',
+                    cache: false,
+                    dataType: 'jsonp',
+                    //这个很重要，跨域问题
+                    type: 'get',
+                    async: false,
+                    data: {
+                        mode: 'driving',
+                        origins: fromjw,
+                        destinations: tojw,
+                        tactics: '12',
+                        output: "json",
+                        ak: window.ak
+                    },
+                    success: function(data) {
+
+                        var txt = data.result.elements[0].distance.text;
+                        var val = data.result.elements[0].distance.value;
+                        //distance[1][1]
+                        $("#distance\\[" + i + "\\]\\[" + j + "\\]").val(txt);
+                        $("#e-distance" + i + j).html(txt);
+                    }
+                });
+                //return result;
+            };
+
+            /*var pos = 0;
+        $("input[id^='coordinate[1]']").each(function(index, element) {
+              if($(this).val() != '') {
+                  //alert($(this).attr('id'));
+                  window.distance.coordinate[0][pos] = $(this).val();
+                  pos++;
+              }
+        });*/
+
+            $(".coordinate").each(function(i, val) {
+
+                //var fromjw=$.trim($("#coordinate"+(i+1)).val());
+                //var tojw=$.trim($("#coordinate"+(i+2)).val());
+                var fromjw = $.trim($(this).val());
+                if (fromjw != '') {
+                    var tojw = $.trim($(this).next(".coordinate").val());
+                    //window.distanceindex = i+1;
+                    var one = $(this).attr('id').substr(10, 3);
+                    var two = $(this).attr('id').substr(13, 3);
+                    one = parseInt(one.replace(/[^0-9]/ig, "")); //1
+                    two = parseInt(two.replace(/[^0-9]/ig, "")); //1
+                    //alert($(this).next(".coordinate").attr('id'));
+                    pos = i + 1;
+                    //alert(window.distanceindex);
+                    //alert($(this).val()+'  '+$(this).next().val());
+                    //alert($.trim($("#coordinate"+(i+1)).val()));
+                    //return false;
+                    if (tojw != '') {
+                        $.distance(fromjw, tojw, one, two);
+                    } else {
+                        //终点到起点
+                        //fromjw = $.trim($("#coordinate"+(i+1)).val());
+                        //tojw = $.trim($("#coordinate1").val());
+                        //$.distance( fromjw, tojw, pos );
+                    }
+                }
+            });
+
+            /*$(".distance").each(function(i) {
+            var distance = $(this).attr('id');
+            //alert(index);
+            var txt = $("#distance"+i).val();
+            $(this).html(txt);
+            //$(distance).html(txt);
+        });*/
+        });</script>
+    <script type="text/javascript">$(function() {
+            if ("False" == "True") {
+                var index = layer.load();
+                layer.msg("");
+                layer.close(index);
+            }
+        });
+
+        $.ajaxSetup({
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader("token", 0.461810935038054);
+            }
+        });</script>
+    <br /></block>
+<include file="Common:foot" />

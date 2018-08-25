@@ -1,0 +1,312 @@
+/* CSS Document */
+
+.book{ margin:30px auto; min-height:400px;}
+.clear{ height:0; line-height:0; clear:both;}
+.book .left{ float:left; width:240px; padding:20px 0; background:#eeeeed; border-radius:6px;}
+
+.book .left ul li{ padding:4px 0;}
+.book .left ul li a{ display:block; text-indent:4.5em; line-height:40px; font-size:16px;}
+.book .left ul li a:hover{ background:#E6E6E5}
+.book .left ul li a.cur{ background:#E6E6E5; border-left:2px solid #007500; color:#009100 }
+
+.book .right{ float:left; width:730px; font-size:15px;}
+.book .right dl{ clear:both}
+.book .right dl dt{ width:100px; text-align:right; padding:10px 10px 10px 0; line-height:30px;}
+.book .right dl dd{ margin:0; padding:10px 0;}
+.book .right dl dd .submit{ border:none; background:#007500; color:#fff; width:200px; text-align:center; line-height:36px; border-radius:4px; font-size:16px; cursor:pointer }
+.book .right dl dd .txt{ background:#EEEEED; outline:none; border-radius:3px; border:none; padding:6px 10px; height:20px;}
+.book .right dl dd .place{ width:360px; margin-left:10px;}
+.book .right dl dd .add{ height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px;}
+.book .right dl dd .add:hover{ background:#007500}
+.book .right dl dd .del{ height:30px; background:#E6E6E5; color:#575757; border:1px solid #ccc; cursor:pointer; border-radius:4px;}
+.book .right dl dd .del:hover{ background:#C0C0C0; color:#181818}
+.book .right dl dd .time{ width:50px;}
+.book .right dl dd .date{ width:180px;}
+.book .right dl dd .flight{ width:450px;}
+.book .right dl dd label{ color: #AAA;}
+
+.book .right dl dd .adddaily{ height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px;}
+.book .right dl dd .adddaily:hover{ background:#007500}
+
+.book .right dl dd .addday{ height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px;}
+.book .right dl dd .addday:hover{ background:#007500}
+
+.book .right .daily{ margin-left:35px; padding:5px; height:25px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px; margin-bottom:10px; }
+.book .right .daily:hover{ background:#007500}
+
+.book .right .daily .delday{ float:right; margin-right:10px; padding:3px; height:25px; background:#00A600; color:#fff; border:0px solid #007500; cursor:pointer; border-radius:4px; font-weight:bold; font-size:14px;background-color:transparent; }
+.book .right .daily .delday:hover{ background:#007500}
+
+.book .right .daily .addday{ float:right; margin-right:10px; padding:3px; height:35px; background:#00A600; color:#fff; border:0px solid #007500; cursor:pointer; border-radius:4px; font-weight:bold; font-size:14px;background-color:transparent;}
+.book .right .daily .addday:hover{ background:#007500}
+
+.book .right .condition .addday{ float:right; width:160px;  margin-right:10px; padding:3px; height:35px; background:#00A600; color:#fff; border:0px solid #007500; cursor:pointer; border-radius:4px; font-weight:bold; font-size:14px; }
+.book .right .condition .addday:hover{ background:#007500}
+
+.book .right .path dl{ height:50px;}
+.book .right .path dl .city{ width:80px; height:18px; cursor:pointer; }
+.book .right .path dl .place{ width:440px;}
+
+.comm .right .daily{ margin-top:3px; padding:5px; height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px; margin-bottom:5px; }
+.comm .right .daily:hover{ background:#007500}
+
+/*选择座位车龄*/
+/*.book .right .cartlist{ background:#eeeeed; border-radius:8px; margin-bottom:10px; margin-top:10px; float:left; width:688px; margin-left:35px;}*/
+.book .right .cartlist{ background:#fff; border-radius:8px; margin-bottom:10px; margin-top:10px; float:left; width:688px; margin-left:35px;}
+.book .right .condition li{ font-size:15px; padding:5px 5px 5px 10px;}
+.book .right .condition li label{ display:inline-block; padding-left:10px; text-align:right; padding-right:8px;}
+.book .right .condition li .select{ width:190px; padding:4px; margin-right:2px; border-radius:3px; border:1px solid #C0C0C0}
+.book .right .condition li .btn{ padding:4px 8px;}
+.book .right .condition li .addseat{ height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px;}
+.book .right .condition li .addseat:hover{ background:#007500}
+.book .right .condition li .del{ height:30px; background:#E6E6E5; color:#575757; border:1px solid #ccc; cursor:pointer; border-radius:4px;}
+/*end 选择座位车龄*/
+
+.select-city{ height:20px; width:130px; margin-top:2px; padding-bottom:1px;}
+
+.selectColor {	border: 1px #009100 solid;	border-radius: 5px;}
+.ml50 {	margin-left: -50px;}
+ul li.no {	padding: 12px;	text-align: center;}
+p {	margin: 0;}
+.result {border: 1px solid #ccc;background: #EAEAEA; border-radius:5px;	z-index:9999;}
+.result a {	display: block;	color: #000; text-decoration:none; padding: 8px 20px;}
+.result a:hover {background: #D5D5D5}
+.result .page{ text-align:right; padding:10px 20px;}
+.part {	position: relative;}
+.part .result {	position: absolute;	top: 33px;	left: 10px;	width: 418px; -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);-o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);-ms-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);}
+.part .result p {color: #969696;	font-size: 13px;}
+
+
+input::-ms-clear{ display:none;}
+
+/* control style */
+#divpickup,#divdropoff,#divtravel{ display:none}
+#divtravel dl{
+	margin-bottom:10px;
+}
+#fill,#selectRadio { width:100%; position:relative;}
+.flight_style,.airport_style,.nonlocal_style,.local_style{ 
+	background:url(../bg/radio_1.png) no-repeat; width:15px; height:15px; float:left; margin-top:4px; margin-left:115px;  display:block;  }
+.flight_style,.local_style {
+	background-position:-5px -28px;	cursor:pointer;}
+.airport_style,.nonlocal_style { 
+	background-position:-5px -4px;	cursor:pointer;}
+#fill li { 
+	float:left;	margin-left:5px; margin-right:10px;}
+	
+/* select car type*/
+.ml25 { margin-left:-25px;}
+.ml20 { margin-left:20px;}
+.mb20 { margin-bottom:20px;}
+.ml26 { margin-left: 26px;}
+.mt30 { margin-top:-30px;}
+.mt10 { margin-top:10px;}
+.mr05 { margin-right: 5px;}
+.mt-3 { margin-top: -3px; }
+.mr10 { margin-top: 30px; }
+
+.wp { margin: 0 auto; width: 1000px;}
+.wp .userinfo-car-left {float:left; width:622px}
+.wp .userinfo-car-right {float:right; width:328px;}
+.userinfo-car-left {}
+
+
+.floatingLeft { float:left}
+.floatingRight { float:right}
+.cartype-back { text-align:right; margin:14px; border-bottom:1px solid #C0C0C0; line-height:40px;}
+.cartype-back a{ font-size:16px; color:#007500}
+.cartype-back a:hover { color:#009100; }
+
+.select-car {
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #F4F4F4;border-radius:5px; height:30px
+}
+
+.select-car span {
+    padding-left: 10px;
+    font-size: 20px !important; 
+    float: left;
+}
+
+.cartype-container { display:block; cursor:pointer; height:180px; background-color:#FFF; border: 1px #CCCCCC solid; border-radius:5px; position:relative }
+cartype-container span { margin-right:10px;}
+.cartype-title { font-size:16px; color:#009100; margin-right:10px; }
+.cartype-content {width:360px; font-size:16px;}
+.clean-status { clear:both }
+/*.right-side { margin-top:-105px; width:80px; min-height:140px; border-left: 1px #CCCCCC solid;}*/
+.right-side { float:left; width:1px; min-height:143px; border-left: 1px #CCCCCC solid; margin-top:-8px;}
+.right-side-txt { position:absolute;margin-left:20px; padding-top:45px;}
+	
+/* Rotate div */
+.rotation {
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-moz-transform:rotate(90deg); /* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+	-o-transform:rotate(90deg); /* Opera */
+}
+
+/*.arrow {
+	border:1px #009100 solid;
+	display:block;width:0;height:0;border-width:8px;border-style:solid;border-color:#eeeeed transparent transparent;position:absolute;top:20px;left:32px;overflow:hidden; 
+}*/
+
+.arrow-down {
+	width: 0px;
+	height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #eeeeed;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.cartype{ margin:20px auto; overflow:hidden; min-height:400px;}
+.cartype .left{ float:left; width:722px; padding:0px 0; background: #FFF; border-radius:6px;}
+
+.cartype .left ul li{ padding:4px 0; margin-bottom:10px;}
+
+.cartype .left ul li div img{
+border-radius: 9px;
+-webkit-border-radius: 9px;
+-moz-border-radius: 9px;
+}
+
+.cartype .left ul li a{ display:block; text-indent:4.5em; line-height:40px; font-size:16px;}
+.cartype .left ul li a:hover{ background:#E6E6E5}
+.cartype .left ul li a.cur{ background:#E6E6E5; border-left:2px solid #007500; color:#009100 }
+
+.cartype .left .team_list li{ border:1px solid #D5D5D5; border-radius:8px; padding:10px; margin-bottom:8px; line-height:200%; position:relative;cursor:pointer}
+.cartype .left .team_list li span{ display:block; position:absolute; width:28px; height:24px; right:10px; background:url(../bg/car_selected_flag_1.png) no-repeat left -24px;}
+.cartype .left .team_list li span.select{ background:url(../bg/car_selected_flag_1.png) no-repeat;}
+.cartype .left .team_list li:hover,.cartype .left .team_list li.cur{ background:#F8F8F8;}
+.cartype .left .team_list li h3{ border-bottom:1px solid #EAEAEA; padding-bottom:4px; text-indent:.2em;}
+.cartype .left .team_list li h3 i{ background:url(../bg/star_gray.jpg) no-repeat 0 1px; width:20px; height:20px; display:inline-block; margin-right:4px; vertical-align:-2px;}
+.cartype .left .team_list li h3 i.r{ background:url(../bg/star_red_1.png) no-repeat 0 1px;}
+
+
+.cartype .left .team_list li dl{ overflow:hidden;}
+.cartype .left .team_list li dl dd{ margin-left:10px; width:45%}
+.cartype .left .team_list li dl dd.addr{ width:90%;}
+
+.cartype .right{ float:right; font-size:15px;}
+.cartype .right dl{ overflow:hidden;}
+.cartype .right dl dt{ width:238px; text-align:right; padding:15px 15px 15px 0; line-height:30px;}
+.cartype .right dl dd{ margin:0; padding:15px 0;}
+.cartype .right dl dd .submit{ border:none; background:#007500; color:#fff; width:200px; text-align:center; line-height:36px; border-radius:4px; font-size:16px; cursor:pointer; z-index:1;}
+.cartype .right dl dd .txt{ background:#EEEEED; outline:none; border-radius:3px; border:none; padding:6px 10px; height:20px;}
+.cartype .right dl dd .place{ width:360px; margin-left:10px;}
+.cartype .right dl dd .time{ width:90px;}
+.cartype .right dl dd .date{ width:180px;}
+.cartype .right dl dd .flight{ width:450px;}
+.cartype .right dl dd label{ color: #AAA;}
+
+/*Thin line*/
+hr { height:0px; border-top:1px solid #CCC;  }
+
+/*icon-phone*/
+.icon { 
+	overflow:hidden; 
+	display:inline-block; 
+	background-image:url(../bg/icon-24_1.png); 
+	background-attachment:scroll; 
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-origin: padding-box;
+	background-clip:border-box;
+	background-color:transparent;
+}
+
+.icon-phone { background-position-x: -544px; background-position-y: -202px; }
+.z { float:left;}
+.mt { margin-top:5px; } 
+
+.icons-phone { background:url(../bg/icon-24_1.png) no-repeat; width:44px; height:44px;}
+.icons-phone { background-position: -544px -202px; }
+.car_selected_flag, .car_submit_selected,.car_selected {background:url(../bg/car_selected_flag_1.png) no-repeat; width:28px; height:24px; cursor:pointer;}
+.car_selected_flag, .car_submit_selected { background-position: 0px -24px; }
+.car_selected { background-position: 0px 0px; }
+
+
+/* userInfo */
+.userinfo-formline { width:648px; float:left} /*add 26*/
+.user-select-show { width:354px; float:right}  /*add 26*/
+.userinfo-formline span.tips{vertical-align:top; margin-top: 5px; display: block; border: none; background: none;}
+.userinfo-formline label{ margin-left: 0px; width: 70px; margin-right:20px;}
+.userinfo-formline ul li { position:relative; margin-top: 30px; }
+.userinfo-formline ul li .label {float:left; margin-left:20px; margin-right:30px;}
+.fill-userinfo {float:left; position:relative; background-color: rgb(244,244,244); border-radius:5px; margin-top:-3px; margin-right:10px;}
+.fill-userinfo span em { font-style:normal; margin-left:-30px;}
+.fill-userinfo input {width:160px; border:none; color:#333;  background-color: rgb(244,244,244); border-radius:5px;  overflow: hidden; padding-left:10px; white-space: nowrap; cursor:pointer; height:30px; line-height:30px;}
+.fill-userinfo .textarea {width:500px; height:120px;  border:none; color:#333;  background-color: rgb(244,244,244); border-radius:5px;  padding-left:10px; cursor:pointer; line-height:30px;}
+.userinfo-formline ul li .submit{ border:none; background:#007500; color:#fff; width:200px; text-align:center; line-height:36px; border-radius:4px; font-size:16px; cursor:pointer;}
+.drop-down-icon { background:url(../bg/zoom-tblr_1.png) no-repeat; position:relative;}
+.drop-down-icon { background-position:right -86px; height:32px; padding-right:30px; display:block; cursor:pointer}
+.ml30 { width:350px;; margin-left: 130px; }
+
+/*个人订单里面的订单详细*/
+.detail .team_list li{ border:1px solid #D5D5D5; border-radius:8px; padding:10px; margin-bottom:8px; line-height:200%; position:relative;cursor:pointer}
+/*.detail .team_list li span{ display:block; position:absolute; width:28px; height:24px; right:10px; background:url(../bg/car_selected_flag_1.png) no-repeat left -24px;}
+.detail .team_list li span.select{ background:url(../bg/car_selected_flag_1.png) no-repeat;}*/
+.detail .team_list li:hover,.cartype .left .team_list li.cur{ background:#F8F8F8;}
+.detail .team_list li h3{ border-bottom:1px solid #EAEAEA; padding-bottom:4px; text-indent:.2em;background-color: #eaeaea;}
+.detail .team_list li h3 i{ background:url(../bg/star_gray_1.png) no-repeat 0 1px; width:20px; height:20px; display:inline-block; margin-right:4px; vertical-align:-2px;}
+.detail .team_list li h3 i.r{ background:url(../bg/star_red_1.png) no-repeat 0 1px;}
+.detail .pay{ border:1px solid #009100; background:#00A600; color:#fff; border-radius:3px; cursor:pointer; font-size:16px; padding:3px 10px;}
+.detail .pay:hover{ background:#007500}
+
+.detail .team_list li dl{ overflow:hidden;}
+.detail .team_list li dl dd{ margin-left:10px; width:45%}
+.detail .team_list li dl dd.addr{ width:90%;}
+
+.fill-userinfo {float:left; position:relative; background-color: rgb(244,244,244); border-radius:5px; margin-top:-3px; margin-right:10px;}
+.fill-userinfo span em { font-style:normal; margin-left:-30px;}
+.fill-userinfo input {width:160px; border:none; color:#333;  background-color: rgb(244,244,244); border-radius:5px;  overflow: hidden; padding-left:10px; white-space: nowrap; cursor:pointer; height:30px; line-height:30px;}
+.fill-userinfo .textarea { margin:20px;width:100%; height:150px;  border:none; color:#333;  background-color: rgb(244,244,244); border-radius:5px; border:1px #CCCCCC solid;  padding-left:20px; cursor:pointer; line-height:30px;}
+
+
+
+/*日租下单*/
+.userinfo-formline .travel ul li{ margin-top: 0px;}
+.userinfo-formline .travel dl{ clear:both}
+.userinfo-formline .travel dl dt{ width:75px; text-align:right; padding:10px 15px 10px 0; line-height:30px;}
+.userinfo-formline .travel dl dd{ margin:0; padding:10px 0;}
+.userinfo-formline .travel dl dd .submit{ border:none; background:#007500; color:#fff; width:200px; text-align:center; line-height:36px; border-radius:4px; font-size:16px; cursor:pointer }
+.userinfo-formline .travel dl dd .txt{ background:#EEEEED; outline:none; border-radius:3px; border:none; padding:6px 10px; height:20px;}
+.userinfo-formline .travel dl dd .place{ width:280px; margin-left:10px;}
+.userinfo-formline .travel dl dd .add{ height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px;}
+.userinfo-formline .travel dl dd .add:hover{ background:#007500}
+.userinfo-formline .travel dl dd .del{ height:30px; background:#E6E6E5; color:#575757; border:1px solid #ccc; cursor:pointer; border-radius:4px;}
+.userinfo-formline .travel dl dd .del:hover{ background:#C0C0C0; color:#181818}
+.userinfo-formline .travel dl dd .time{ width:50px;}
+.userinfo-formline .travel dl dd .date{ width:180px;}
+.userinfo-formline .travel dl dd .flight{ width:450px;}
+.userinfo-formline .travel dl dd label{ color: #AAA;}
+
+.userinfo-formline .travel dl dd .adddaily{ height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px;}
+.userinfo-formline .travel dl dd .adddaily:hover{ background:#007500}
+
+.userinfo-formline .travel dl dd .addday{ height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px;}
+.userinfo-formline .travel dl dd .addday:hover{ background:#007500}
+
+.userinfo-formline .travel .daily{ margin-left:35px; padding:5px; height:25px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px; margin-bottom:10px; }
+.userinfo-formline .travel .daily:hover{ background:#007500}
+
+.userinfo-formline .travel .daily .delday{ float:right; margin-right:10px; padding:3px; height:25px; background:#00A600; color:#fff; border:0px solid #007500; cursor:pointer; border-radius:4px; font-weight:bold; font-size:14px;background-color:transparent; }
+.userinfo-formline .travel .daily .delday:hover{ background:#007500}
+
+.userinfo-formline .travel .daily .addday{ float:right; margin-right:10px; padding:3px; height:35px; background:#00A600; color:#fff; border:0px solid #007500; cursor:pointer; border-radius:4px; font-weight:bold; font-size:14px;background-color:transparent;}
+.userinfo-formline .travel .daily .addday:hover{ background:#007500}
+
+.userinfo-formline .travel .condition .addday{ float:right; width:160px;  margin-right:10px; padding:3px; height:35px; background:#00A600; color:#fff; border:0px solid #007500; cursor:pointer; border-radius:4px; font-weight:bold; font-size:14px; }
+.userinfo-formline .travel .condition .addday:hover{ background:#007500}
+
+.userinfo-formline .travel .path dl{ height:50px;}
+.userinfo-formline .travel .path dl .city{ width:80px; height:18px; cursor:pointer; }
+.userinfo-formline .travel .path dl .place{ width:280px;}
+
+.userinfo-formline .travel .daily{ margin-top:3px; padding:5px; height:30px; background:#00A600; color:#fff; border:1px solid #009100; cursor:pointer; border-radius:4px; margin-bottom:5px; }
+.userinfo-formline .travel .daily:hover{ background:#007500}

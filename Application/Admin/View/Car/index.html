@@ -1,0 +1,74 @@
+<include file="Common:head" />
+<block name="main">
+        <div class="main-wrap">
+
+                <div class="crumb-wrap">
+                    <div class="crumb-list"><i class="icon-font"></i><a href='{:U("Index/admin_index")}'>首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">车型列表</span></div>
+                </div>
+                
+                <div class="result-wrap">
+                    <form name="myform" id="myform" method="post">
+                        <div class="result-title">
+                            <div class="result-list">
+                                <a href="{:U('Car/add')}"><i class="icon-font"></i>添加新车型</a>
+                            </div>
+                        </div>
+                        <div class="result-content">
+                            <table class="result-tab" width="100%">
+                                <tr>
+                                    <th>缩略图</th>
+                                    <th>车型名</th>
+                                    <th>人数</th>
+                                    <th>行李数</th>
+                                    <th>等同级别</th>
+                                    <th>分数</th>
+                                    <th>价格</th>
+                                    <th>车型类型/用途</th>
+                                    <th>上架/显示</th>
+                                    <th>操作</th>
+                                </tr>
+                                <foreach name="car_list" item="list">
+                                    <tr>
+                                        <td style="text-align: center;"><img src="/Application/Admin/Uploads/{$list['car_pic']}" alt="图片加载失败" width="110px;" height="60px;"></td>
+                                        <td>{$list.car_name}</td>
+                                        <td style="text-align:center;">{$list.people_num}</td>
+                                        <td style="text-align:center;">{$list.bags_num}</td>
+                                        <td>{$list.equivalent}</td>
+                                        <td>{$list.score}</td>
+                                        <td>￥{$list.car_price}</td>
+                                        <td>
+                                            <if condition="strpos($list['car_type'],'0') !== false">
+                                                在线订车　
+                                            </if>
+                                            <if condition="strpos($list['car_type'],'1') !== false">
+                                                日租包车　
+                                            </if>
+                                            <if condition="strpos($list['car_type'],'2') !== false">
+                                                接机送机　
+                                            </if>
+                                            <!-- {$list.car_type} -->
+                                        </td>
+                                        <td style="text-align:center;">
+                                            <if condition="$list.is_show eq 0">
+                                            上架
+                                            <else/>
+                                            下架
+                                            </if>
+                                        </td>
+                                        <!-- <td>{$list.create_time|date="Y-m-d H:i",###}</td> -->
+                                        <td>
+                                            <a class="link-update" href="{:U('Car/edit',array('id'=>$list['id']))}">修改</a> | 
+                                            <a class="link-del" href="{:U('Car/del/',array('id'=>$list['id']))}">删除</a>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </table>
+                            <div class="result-list">
+                                    总共：{$count}条数据
+                            </div>
+                            <div class="list-page">{$page}</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+</block>

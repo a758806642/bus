@@ -1,0 +1,273 @@
+<include file="Common:head" />
+<nav>
+    <div class="comm">
+        <a class="" href="{:U('Index/index')}">
+            首页
+        </a>
+        <a class="" href="{:U('Order/travel')}">
+            在线订车
+        </a>
+        <a class="index" href="{:U('Order/rent_order')}">
+            日租包车
+        </a>
+        <a class="" href="{:U('Order/shuttle_order')}">
+            接机/送机
+        </a>
+    </div>
+</nav>
+<script src="/Application/Home/js/jquery-ui.min.js">
+</script>
+<link href="/Application/Home/css/jquery-ui.css" rel="stylesheet" />
+<script src="/Application/Home/js/dateinput-ch-ZN.js">
+</script>
+<script src="/Application/Home/js/jquery.unobtrusive-ajax.min.js">
+</script>
+<link href="/Application/Home/css/user.css" rel="stylesheet" />
+<script>
+    $(function () {
+        $(".index").addClass("cur");
+        $("#startTime").datepicker();
+        $("#endTime").datepicker();
+
+        var status = "0";
+        if (status == '') {
+            status = 1;
+        }
+        //if (status != 0) {
+        $("dd[name='" + status + "']").find('a').addClass('cur');
+        //$("dd[name=0]").find('a').attr('class', '');
+        //}
+
+    });
+</script>
+<style type="text/css">
+    .vo dl dd {
+        width: 60px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .title dl dt {
+        width: 180px;
+    }
+
+    dd a.unlined {
+        color: #CCC;
+        cursor: none;
+        text-decoration: none;
+    }
+
+    dd a.unlined:hover {
+        color: #CCC;
+        cursor: none;
+        text-decoration: none;
+    }
+
+    dd a.unlined:link {
+        color: #CCC;
+        cursor: none;
+        text-decoration: none;
+    }
+
+    dd a.unlined:visited {
+        color: #CCC;
+        cursor: none;
+        text-decoration: none;
+    }
+
+    dd a.unlined:active {
+        color: #CCC;
+        cursor: none;
+        text-decoration: none;
+    }
+</style>
+<div class="comm uc">
+    <div class="left">
+        <h3>
+            我的运来出行
+        </h3>
+        <h2>
+            个人帐号
+        </h2>
+        <div class="line">
+        </div>
+        <ul>
+            <li>
+                <a href="{:U('Order/order_list?type=0')}" id="">
+                    竞价订单
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Order/order_list?type=1')}" id="myorder">
+                    日租订单
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Order/order_list?type=2')}" id="">
+                    接送机订单
+                </a>
+            </li>
+        </ul>
+        <div class="line">
+        </div>
+        <ul>
+            <li>
+                <a href="{:U('User/personal')}" id="myinfo">
+                    个人资料
+                </a>
+            </li>
+            <!-- <li>
+                <a display="none" href="/User/Travels" id="travels">
+                    子公司/部门管理
+                </a>
+            </li> -->
+            <li>
+                <a href="{:U('User/change_password')}" id="password">
+                    修改密码
+                </a>
+            </li>
+        </ul>
+        <div class="line">
+        </div>
+    </div>
+    <div class="right orderinfo">
+        <!--订单明细-->
+        <div class="order_desc">
+                <em>订单编号：{$order_data.order_num} </em>
+                <em>订单状态：
+                    <span style="color:#0C0">
+                            <if condition="$order_data.order_status eq 1">
+                                    待报价
+                                <elseif condition="$order_data.order_status eq 2" />
+                                    已报价： {$order_data.order_price} 元<a href="{:U('Order/wxpay',array('price'=>$order_data['order_price'],'id'=>$order_data['id']))}" id="submit" class="pay">确认用车</a>
+                                <elseif condition="$order_data.order_status eq 3" />
+                                    已付款
+                                <elseif condition="$order_data.order_status eq 4" />
+                                    已确认	
+                                <elseif condition="$order_data.order_status eq 5" />
+                                    已派车
+                                <elseif condition="$order_data.order_status eq 6" />
+                                    已完成
+                                <elseif condition="$order_data.order_status eq 7" />
+                                    已取消
+                                <elseif condition="$order_data.order_status eq 8" />
+                                    待付款
+                                </if>
+                    </span>
+                </em>
+            <!-- <em>付款状态：</em> -->
+            <div class="hr"></div>
+            <div class="detail" style=" padding:0; margin:0; padding-right:20px;">
+                <input type="hidden" id="state" name="state" style="margin-left:20px" value="">
+                <div class="per50">
+
+                </div>
+                <div style="float:right">
+                    <input type="button" name="nothing" id="nothing" onclick="javascript:history.back(-1)" style="float:right;" value="返回">
+
+                </div>
+            </div>
+        </div>
+        <div class="detail">
+            <h2>订单信息</h2>
+            <!-- <p>
+                <em>租车类型 ：</em>往返</p> -->
+            <div style=" border:1px solid #CCC; padding:1px 10px; border-radius:5px;">
+                <p>
+                    车型：{$car_data.car_name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 乘坐人数: {$car_data.people_num}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 行李数: {$car_data.bags_num}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 需求数量: {$order_data.car_number}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                </p>
+                <p>等同级别: {$car_data.equivalent}</p>
+            </div>
+            <foreach name="busline" item="b" key="k">
+                    <div class="daily" name="daily" day="1">第{$k+1}天行车线路 &nbsp; {$b.travel_start}→{$b.travel_end}
+                        <!--<span style=\"float:right;\">点击打开详细线路信息</span>-->
+                    </div>
+                    <div id='divtravel' name='divtravel' show='' style='display:block'>
+                        <!--<div class="per50"><em>上车地点：</em>广州</div>
+                                    <div class="per50"><em>下车地点：</em>广州</div>-->
+                        <em>起点：{$b.travel_start}</em>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <em>地点：{$b.start_address}({$b.fromaddr})</em>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!--<em>地址：黄埔区萝岗科学城伴河路192号（植树公园旁）</em>-->
+                        <!-- &nbsp;&nbsp;↓&nbsp;&nbsp;121.3公里&nbsp;&nbsp; -->
+                        <br />
+                        <foreach name="via[$k]" item="v">
+                            <p>途经点：{$v.path}，{$v.path_address}</p>
+                        </foreach>
+                        <!-- <br /> -->
+                        <em>终点：{$b.travel_end}</em>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <em>地点：{$b.end_address}({$b.toaddr})</em>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!--<em>地址：黄埔区萝岗科学城伴河路192号（植树公园旁）</em>-->
+                        <br />
+                        <p>
+                            <em>用车时间 ：</em>{$b.transport_time|date="Y-m-d H:i",###}</p>
+                    </div>
+                    <!-- <p>
+                        <em>供应商等级 ：
+                            <if condition="$order_data.order_level eq 0">不限
+                                <elseif condition="$order_data.order_level eq 1"/>一级
+                                <elseif condition="$order_data.order_level eq 2"/>二级
+                                <elseif condition="$order_data.order_level eq 3"/>三级
+                            </if>
+                        </em>
+                    </p> -->
+                    <p>
+                        <em>服务留言 ：{$order_data.remark}</em>
+                    </p>
+    
+                    <!-- <p>
+                        <em>取消原因 ：目的地发生不安全事件、恶劣天气、自然灾害等</em>
+                    </p> -->
+                </foreach>
+
+        </div>
+    </div>
+</div>
+<!--<button id="test" type="button" class="buttonPrimary" style="margin:20px">Sign out</button>-->
+<div id="detail" style="position: relative; display: none; width: 500px; text-align: center; overflow: hidden; z-index: 9999">
+    <div style="text-align: center; overflow: hidden;">
+        <img src="/Images/dialog-help.png">
+        <span style="position: relative; top: -10px;">确定要取消这个订单?</span>
+    </div>
+    <p></p>
+    <div align="center" style="margin-top: 10px; padding: 10px;">
+        <form action="/User/OrderCancel" id="updateOrder" method="post" name="updateOrder">
+            <input name="__RequestVerificationToken" type="hidden" value="TxYg4TUiUPKzE3DIoTOxPhY2qr2XHOhV0nbv_GfaAYV-Z804YncC6WeK6JXzMK0KvP8B5e7ulRPEjNNFwki4uPQBqks1"
+            />
+            <input type="hidden" name="orderId" id="orderId" value="182425">
+            <button id="action" type="submit" class="buttonPrimary">确定</button>
+            <button style="margin-left: 10px;" class="buttonPrimary" id="cancel" type="button">放弃</button>
+            <p></p>
+            <label style="float: left; margin-left: 20px; margin-top: 10px;">取消订单原因:</label>
+            <select style="margin: 5px; width: 300px" name="reason">
+                <option value="目的地发生不安全事件、恶劣天气、自然灾害等">目的地发生不安全事件、恶劣天气、自然灾害等</option>
+                <option value="自己或者家人有事不能去了">自己或者家人有事不能去了</option>
+                <option value="订单重复">订单重复</option>
+                <option value="订单写错了">订单写错了</option>
+                <option value="车队变价">车队变价</option>
+            </select>
+        </form>
+    </div>
+</div>
+
+</div>
+<script>
+    $("#myorder").addClass('cur');
+    var theorder = $("#theOrder").val();
+    var theorderNo = $("#theOrderNo").val();
+    //alert(theorder);
+    if (theorder == 'completed') {
+        $("#theOrder").val('');
+        $("#theOrderNo").val('');
+        layer.msg("<span style='overflow:hidden'>订单已成功<br />订单编号:" + theorderNo + "</span>", {
+            time: 6000,
+            area: ['240px', '70px'],
+            shift: 4 //动画类型
+        });
+    }
+</script>
+<br />
+<include file="Common:foot" />

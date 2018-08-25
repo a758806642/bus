@@ -1,0 +1,126 @@
+<include file="Common:head" />
+<block name="main">
+        <div class="main-wrap">
+                <div class="crumb-wrap">
+                    <div class="crumb-list"><i class="icon-font"></i><a href='{:U("Index/admin_index")}'>首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">接送机/火车订单列表</span></div>
+                </div>
+                <div class="result-wrap">
+                    <form name="myform" id="myform" method="post">
+                        <div class="result-title">
+                            <div class="result-list">
+                                <input type="button" name="nothing" id="back" onclick="javascript:history.back(-1)" style="float:right;" value="返回">
+                            </div>
+                        </div>
+                        <div class="result-content">
+                            <table class="result-tab t_1" >
+                                <tr>
+                                    <th>订单号</th><td>{$order_data.order_num}</td>
+                                    <th>车型logo</th><td><img src="/Application/Admin/Uploads/{$car_data.car_pic}" alt="加载失败" width="80px" height="40px" onclick="javascript:window.open(this.src);"></td>
+                                </tr>
+                                <tr>
+                                    <th>用车人</th><td>{$order_data.travel_username}</td>
+                                    <th>车型名</th><td>{$car_data.car_name}</td>
+                                </tr>
+                                <tr>
+                                    <th>联系方式</th><td>{$order_data.travel_mobile}</td>
+                                    <th>座位数</th><td>{$car_data.people_num}</td>
+                                </tr>
+                                <tr>
+                                    <th>服务类型</th><td>
+                                        <if condition="$busline[0]['service_type'] eq 1">接机
+                                            <elseif condition="$busline[0]['service_type'] eq 2"/>送机
+                                            <elseif condition="$busline[0]['service_type'] eq 3"/>接火车
+                                            <elseif condition="$busline[0]['service_type'] eq 4"/>送火车
+                                        </if>
+                                    </td>
+                                    <th>可放行李数</th><td>{$car_data.bags_num}</td>
+                                </tr>
+                                <tr>
+                                    <th>用车时间</th><td>{$order_data.transport_time|date="Y-m-d H:i",###}</td>
+                                    <th>等同级别</th><td>{$car_data.equivalent}</td>
+                                </tr>
+                                <tr>
+                                        <th>订单状态</th>
+                                        <td>
+                                            <span style="color:#009100">
+                                                <if condition="$order_data.order_status eq 1">
+                                                        待报价
+                                                    <elseif condition="$order_data.order_status eq 2" />
+                                                        已报价： ￥{$order_data.order_price}
+                                                    <elseif condition="$order_data.order_status eq 3" />
+                                                        已付款，应付：￥{$order_data.order_price}
+                                                    <elseif condition="$order_data.order_status eq 4" />
+                                                        已确认	
+                                                    <elseif condition="$order_data.order_status eq 5" />
+                                                        已派车
+                                                    <elseif condition="$order_data.order_status eq 6" />
+                                                        已完成
+                                                    <elseif condition="$order_data.order_status eq 7" />
+                                                        已取消
+                                                </if>
+                                            </span>
+                                        </td>
+                                    <th>车价(元)</th><td>{$car_data.car_price}</td>
+                                </tr>
+                                <tr>
+                                    <th>下单时间</th><td>{$order_data.create_time|date="Y-m-d H:i",###}</td>
+                                    <th>车型评分</th><td>{$car_data.score}</td>
+                                        
+                                </tr>
+                                <!-- <tr>
+                                    <th>备注留言</th><td >{$order_data.remark}</td>
+                                </tr> -->
+                            </table>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="result-wrap">
+                    <table class="result-tab t_1" >
+                        <tr>
+                            <th>行车路线</th>
+                            <td >
+                                <foreach name="busline" item="b" key="k">
+                                    <p><span style="color: #009100">第{$k+1}天路线&nbsp;&nbsp;&nbsp;{$b.travel_start} - {$b.travel_end}</span></p>
+                                    <p style="text-align:left;"><span><b>出发时间：</b>{$b.transport_time|date="Y-m-d H:i",###}</span></p>
+                                    <p style="text-align:left;"><span><b>起点：</b>{$b.travel_start}，{$b.start_address}</span></p>
+                                    <foreach name="via[$k]" item="v">
+                                        <p style="text-align:left;"><span><b>途经点：</b>{$v.path}，{$v.path_address}</span></p>
+                                    </foreach>
+                                    <p style="text-align:left;"><span><b>终点：</b>{$b.travel_end}，{$b.end_address}</span></p>
+                                </foreach>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <style>
+                .t_1 {
+                    margin-left: 150px;
+                    /* width: 500px; */
+                    /* float: left; */
+                }
+
+                .t_1 th {
+                    text-align: center;
+                    width: 150px;
+                }
+
+                .t_1 td {
+                    text-align: center;
+                    width: 500px;
+                }
+                #back{
+                    border: 1px solid #dfd9d9;
+                    background: #ebe6e6;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    padding: 3px 10px;
+                    margin-right: 18px;
+                    
+                }
+                
+            </style>
+</block>

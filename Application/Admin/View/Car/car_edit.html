@@ -1,0 +1,104 @@
+<include file="Common:head" />
+<script type="text/javascript">
+    //JS file 图片 即选即得 显示
+    //创建一个FileReader对象
+    var reader = new FileReader();
+    function f_change(file) {
+        var img = document.getElementById('imgSdf');
+        //读取File对象的数据
+        reader.onload = function (evt) {
+            //data:img base64 编码数据显示
+            img.width = "100";
+            img.height = "100";
+            img.src = evt.target.result;
+        }
+        
+        reader.readAsDataURL(file.files[0]);
+    }
+
+</script>
+<block name="main">
+        <div class="main-wrap">
+
+                <div class="crumb-wrap">
+                    <div class="crumb-list"><i class="icon-font"></i><a href="{:U('index/admin_index')}">首页</a><span class="crumb-step">&gt;</span><span>修改车型</span></div>
+                </div>
+                <div class="result-wrap">
+                    <div class="result-content">
+                        <form action="{:U('Car/add_send',array('id'=>$car['id']))}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                            <table class="insert-tab" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>车型名：</th>
+                                        <td>
+                                            <input class="common-text required" name="car_name" size="50" value="{$car.car_name}" type="text" placeholder="请输入车型名">&nbsp;&nbsp;&nbsp;<i class="require-red">*</i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>人　数：</th>
+                                        <td>
+                                            <input class="common-text" name="people_num" size="50" value="{$car.people_num}" type="text" placeholder="请输入可乘坐人数">&nbsp;&nbsp;&nbsp;<i class="require-red">*</i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>行李数：</th>
+                                        <td>
+                                            <input class="common-text required" name="bags_num" size="50" value="{$car.bags_num}" type="text" placeholder="请输入可拉运行李数">&nbsp;&nbsp;&nbsp;<i class="require-red">*</i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>等同级别：</th>
+                                        <td>
+                                            <input class="common-text required" name="equivalent" size="50" value="{$car.equivalent}" type="text" placeholder="请输入车辆等同级别">&nbsp;&nbsp;&nbsp;<i class="require-red">*</i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>分　数：</th>
+                                        <td>
+                                            <input class="common-text" name="score" size="50" value="{$car.score}" type="text" placeholder="请输入车辆评价分数">&nbsp;&nbsp;&nbsp;<i class="require-red">*</i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>价　格：</th>
+                                        <td>
+                                            <input class="common-text" name="car_price" size="50" value="{$car.car_price}" type="text" placeholder="请输入车辆定价">&nbsp;&nbsp;&nbsp;<i class="require-red">*</i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>图　片：</th>
+                                        <td>
+                                            <img alt="图片加载失败" src="/Application/Admin/Uploads/{$car['car_pic']}" id="imgSdf" height="100px" width="100px">
+                                            <input type="file" name="pic_files" id="sdfFile" value="" onchange="f_change(this);">
+                                            <input type="hidden" name="car_pic" value="{$car['car_pic']}">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>车型类型（用途）：</th>
+                                        <td>
+                                            <input type="checkbox" name="car_type[]" value="0" <if condition="strpos($car['car_type'],'0') !== false">checked</if>>在线订车　　　
+                                            <input type="checkbox" name="car_type[]" value="1" <if condition="strpos($car['car_type'],'1') !== false">checked</if>>日租包车　　　
+                                            <input type="checkbox" name="car_type[]" value="2" <if condition="strpos($car['car_type'],'2') !== false">checked</if>>接机/送机　　　
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>是否上架：</th>
+                                        <td>
+                                            <input type="radio" name="is_show" value="0" <if condition="$car['is_show'] eq '0'">checked</if>>是　　
+                                            <input type="radio" name="is_show" value="1" <if condition="$car['is_show'] eq '1'">checked</if>>否
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>
+                                            <input class="btn btn-primary btn6 mr10" value="修改" type="submit">
+                                            <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+        
+            </div>
+</block>

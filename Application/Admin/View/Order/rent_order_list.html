@@ -1,0 +1,256 @@
+<include file="Common:head" />
+<script src="/Application/Home/js/layer/layer.js"></script>
+<block name="main">
+        <div class="main-wrap">
+                <div class="crumb-wrap">
+                    <div class="crumb-list"><i class="icon-font"></i><a href='{:U("Index/admin_index")}'>首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">日租包车订单列表</span></div>
+                </div>
+
+                <style>
+                    .query {
+                        background: #f4f4f3;
+                        border-radius: 8px;
+                        min-height: 30px;
+                        padding: 20px 30px 20px 20px;
+                        font-size: 16px;
+                    }
+                    .search{
+                        float: right;
+                    }
+                    .float{
+                        float: right;
+                    }
+
+                </style>
+                    <div class="query">
+                        <form action="{:U('Order/order_list',array('type'=>1))}" method="get" id="myform" name="myform" enctype="multipart/form-data">
+                            <div class="search">
+                                    <span>订单状态：</span>
+                                        <select name="status" class="common-text" style="width:120px;">
+                                            <option value="">
+                                                全部
+                                            </option>
+                                            <option value="8" <if condition="$status eq 8">selected</if>>
+                                                待付款
+                                            </option>
+                                            <option value="1" <if condition="$status eq 1">selected</if>>
+                                                待报价
+                                            </option>
+                                            <option value="2" <if condition="$status eq 2">selected</if>>
+                                                已报价
+                                            </option>
+                                            <option value="3" <if condition="$status eq 3">selected</if>>
+                                                已付款
+                                            </option>
+                                            <option value="4" <if condition="$status eq 4">selected</if>>
+                                                已确认
+                                            </option>
+                                            <option value="5" <if condition="$status eq 5">selected</if>>
+                                                已派车
+                                            </option>
+                                            <option value="6" <if condition="$status eq 6">selected</if>>
+                                                已完成
+                                            </option>
+                                            <option value="7" <if condition="$status eq 7">selected</if>>
+                                                已取消
+                                            </option>
+                                        </select>　　　　　
+                                    <span>预定时间：</span><input class="common-text num_input" name="start_time" size="15" value="{$start_time}" type="date" placeholder="开始时间"> - 
+                                        <input class="common-text num_input" name="end_time" size="15" value="{$end_time}" type="date" placeholder="结束时间">　　　　　
+                                    <span>订单号查询：</span><input class="common-text num_input" name="order_num" size="15" value="{$order_num}" type="text" placeholder="请输入订单号">　　　　　
+                                    <input class="btn btn-primary btn6 mr10 " value="提交" type="submit" >
+                            </div>
+                            
+                        </form>
+                    </div>
+
+
+
+                <div class="result-wrap">
+                    <form name="myform" id="myform" method="post">
+
+                        <div class="result-content">
+                            <table class="result-tab" width="100%" style="text-align:center;">
+                                <tr>
+                                    <th>订单号</th>
+                                    <th>下单时间</th>
+                                    <th>用车时间</th>
+                                    <th>出发城市</th>
+                                    <th>车型</th>
+                                    <th>用车天数</th>
+                                    <th>订单状态</th>
+                                    <!-- <th>操作</th> -->
+                                </tr>
+                                <foreach name="order_list" item="list">
+                                    <tr>
+                                        <td><a href="{:U('Order/order_detail',array('order_id'=>$list['id'],'type'=>1))}">{$list.order_num}</a></td>
+                                        <td>{$list.create_time|date="Y-m-d H:i",###}</td>
+                                        <td>{$list.transport_time|date="Y-m-d H:i",###}</td>
+                                        <td>{$list.travel_start}</td>
+                                        <td>{$list.car_name}</td>
+                                        <td><if condition="$list.days eq 999">半天
+                                            <elseif condition="$list.days eq 1" />一天
+                                            <elseif condition="$list.days eq 2" />两天
+                                            <elseif condition="$list.days eq 3" />三天
+                                            <elseif condition="$list.days eq 4" />四天
+                                            <elseif condition="$list.days eq 5" />五天
+                                            </if></td>
+                                        <td>
+                                            <span style="color:#009100" class="span">
+                                                <if condition="$list.order_status eq 1">
+                                                    <input class="layui-btn layui-btn-primary layer-demolist a_input btn btn-primary btn5 mr10" type="button" name="order_price" value="待报价" data-id="{$list.id}"/>
+                                                <elseif condition="$list.order_status eq 2" />
+                                                    已报价： ￥{$list.order_price}
+                                                <elseif condition="$list.order_status eq 3" />
+                                                    已付款，应付：￥{$list.order_price}
+                                                    <input class="btn btn-primary btn5 mr10 float" value="确认" type="button" id="ajax_order_verify" data-id="{$list.id}" name="ajax_order_verify">
+                                                <elseif condition="$list.order_status eq 4" />
+                                                    已确认，待派车<input class="btn btn-primary btn5 mr10 float" value="派车" type="button" id="ajax_send_car" data-id="{$list.id}" name="ajax_send_car">	
+                                                <elseif condition="$list.order_status eq 5" />
+                                                    已派车<input class="btn btn-primary btn5 mr10 float" value="订单完成" type="button" id="ajax_order_finish" data-id="{$list.id}" name="ajax_order_finish">	
+                                                <elseif condition="$list.order_status eq 6" />
+                                                    已完成
+                                                <elseif condition="$list.order_status eq 7" />
+                                                    已取消
+                                                <elseif condition="$list.order_status eq 8" />
+                                                    待付款
+                                                </if>
+                                            </span>
+                                        </td>
+                                        <!-- <td>
+                                            <a class="link-update" href="{:U('Order/edit',array('id'=>$list['id']))}">修改</a>
+                                        </td> -->
+                                    </tr>
+                                </foreach>
+                            </table>
+                            <div class="result-list">
+                                    总共：{$count}条数据
+                            </div>
+                            <div class="list-page">{$page}</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script>
+                    $('.a_input').click(function(){
+                        var id = $(this).data("id");
+                        layer.prompt(function(val, index){
+                        var order_price = val;
+                            
+                            $.ajax({
+                                url: '/Admin/Order/ajax_update',
+                                type: 'POST',
+                                typeData: 'json',
+                                data: { id: id, order_price: order_price},
+                                success: function(res){
+                                    if(res>0) {
+                                        layer.msg('报价成功');
+                                        $('tr td .span').each(function(){
+                                            if($(this).find('input').data('id') == id) {
+                                                $(this).html('');
+                                                $(this).html('<span style="color:#009100">已报价： ￥'+order_price);
+                                            }
+    
+                                        });
+                                    } else {
+                                        layer.msg('报价失败');
+                                    }
+                                    return;
+                                },
+                                error:function() {
+                                    layer.msg('异常');
+                                    return;
+                                }
+                            });
+                            layer.close(index);
+                        });
+                    });
+
+
+                    $('#ajax_order_verify').click(function(){
+                    var id = $(this).data("id");
+                        $.ajax({
+                            url: '/Admin/Order/order_verify',
+                            type: 'POST',
+                            typeData: 'json',
+                            data: { id: id},
+                            success: function(res){
+                                if(res>0) {
+                                    layer.msg('确认成功');
+                                    $('tr td .span').each(function(){
+                                        if($(this).find('input').data('id') == id) {
+                                            $(this).html('');
+                                            $(this).html('已确认，待派车<input class="btn btn-primary btn5 mr10 float" value="派车" type="button" id="ajax_send_car" data-id="'+id+'" name="ajax_send_car">');
+                                        }
+
+                                    });
+                                } else {
+                                    layer.msg('确认失败');
+                                }
+                                return;
+                            },
+                            error:function() {
+                                layer.msg('异常');
+                                return;
+                            }
+                        });
+                        // layer.close(index);
+                    });
+
+                $('.span').on('click','#ajax_send_car',function(){
+                    var id = $(this).data("id");
+                        $.ajax({
+                            url: '/Admin/Order/ajax_send_car',
+                            type: 'POST',
+                            typeData: 'json',
+                            data: { id: id},
+                            success: function(res){
+                                if(res>0) {
+                                    layer.msg('派车成功');
+                                    $('tr td .span').each(function(){
+                                        if($(this).find('input').data('id') == id) {
+                                            $(this).html('');
+                                            $(this).html('已派车<input class="btn btn-primary btn5 mr10 float" value="订单完成" type="button" id="ajax_order_finish" data-id="'+ id +'" name="ajax_order_finish">');
+                                        }
+
+                                    });
+                                } else {
+                                    layer.msg('派车失败');
+                                }
+                                return;
+                            },
+                            error:function() {
+                                layer.msg('异常');
+                                return;
+                            }
+                        });
+                    });
+
+                    $('.span').on('click','#ajax_order_finish',function(){
+                    var id = $(this).data("id");
+                        $.ajax({
+                            url: '/Admin/Order/ajax_order_finish',
+                            type: 'POST',
+                            typeData: 'json',
+                            data: { id: id},
+                            success: function(res){
+                                if(res>0) {
+                                    layer.msg('订单完成');
+                                    $('tr td .span').each(function(){
+                                        if($(this).find('input').data('id') == id) {
+                                            $(this).html('');
+                                            $(this).html('已完成');
+                                        }
+
+                                    });
+                                } 
+                                return;
+                            },
+                            error:function() {
+                                layer.msg('异常');
+                                return;
+                            }
+                        });
+                    });
+                </script>
+</block>

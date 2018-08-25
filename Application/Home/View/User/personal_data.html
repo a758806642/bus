@@ -1,0 +1,240 @@
+<include file="Common:head" />
+<nav>
+    <div class="comm">
+        <a class="index" href="{:U('Index/index')}">
+            首页
+        </a>
+        <a class="" href="{:U('Order/travel')}">
+            在线订车
+        </a>
+        <a class="" href="{:U('Order/rent_order')}">
+            日租包车
+        </a>
+        <a class="" href="{:U('Order/shuttle_order')}">
+            接机/送机
+        </a>
+    </div>
+</nav>
+
+
+    <link href="/Application/Home/css/user.css" rel="stylesheet" />
+
+    <link href="/Application/Home/css/style.css" rel="stylesheet" />
+
+    <script src="/Application/Home/js/validform_v5.3.2.js"></script>
+
+    <script>
+        $(function () {
+            $(".index").addClass("cur");
+
+
+
+            //$(".saveinfo").click(function () {
+
+            //    if ($("input[name='compname']").val() == '') {
+            //        layer.msg('公司名称不能为空！', { time: 3000 });
+            //        return false;
+            //    }
+            //    if ($("input[name='address']").val() == '') {
+            //        layer.msg('详细地址不能为空！', { time: 3000 });
+            //        return false;
+            //    }
+            //    if ($("input[name='tel']").val() == '') {
+            //        layer.msg('公司电话不能为空！', { time: 3000 });
+            //        return false;
+            //    }
+            //    if ($("input[name='cperson']").val() == '') {
+            //        layer.msg('紧急联系人不能为空！', { time: 3000 });
+            //        return false;
+            //    }
+            //    if ($("input[name='truename']").val() == '') {
+            //        layer.msg('姓名不能为空！', { time: 3000 });
+            //        return false;
+            //    }
+            //    if ($("input[name='phone']").val() == '') {
+            //        layer.msg('手机不能为空！', { time: 3000 });
+            //        return false;
+            //    }
+            //    if ($("input[name='email']").val() == '') {
+            //        layer.msg('电子邮箱不能为空！', { time: 3000 });
+            //        return false;
+            //    }
+            //    if ($("input[name='paddress']").val() == '') {
+            //        layer.msg('个人地址不能为空！', { time: 3000 });
+            //        return false;
+            //    }
+
+            //    $("#infoForm").attr('action', '/User/updateUserInfo').submit();
+            //});
+
+        });
+
+    </script>
+
+<div class="comm uc">
+        <div class="left">
+            <h3>
+                我的运来出行
+            </h3>
+            <h2>
+                个人帐号
+            </h2>
+            <div class="line">
+            </div>
+            <ul>
+                <li>
+                    <a href="{:U('Order/order_list?type=0')}" id="">
+                        竞价订单
+                    </a>
+                </li>
+                <li>
+                    <a href="{:U('Order/order_list?type=1')}" id="myorder">
+                        日租订单
+                    </a>
+                </li>
+                <li>
+                    <a href="{:U('Order/order_list?type=2')}" id="">
+                        接送机订单
+                    </a>
+                </li>
+            </ul>
+            <div class="line">
+            </div>
+            <ul>
+                <li>
+                    <a href="{:U('User/personal')}" id="myinfo">
+                        个人资料
+                    </a>
+                </li>
+                <!-- <li>
+                    <a display="none" href="/User/Travels" id="travels">
+                        子公司/部门管理
+                    </a>
+                </li> -->
+                <li>
+                    <a href="{:U('User/change_password')}" id="password">
+                        修改密码
+                    </a>
+                </li>
+            </ul>
+            <div class="line">
+            </div>
+        </div>
+        <!-- <script>
+            //GetCurrentUser
+            $.ajax({
+                type: 'POST',
+                url: '/Common/GetCurrentUser',
+                async: false,
+                //dataType: 'json',
+                success: function (data) {
+                    var json = eval(data);
+                    if (json.IsGroupAccount) {
+                        $("#travels").show();
+                    } else {
+                        $("#travels").hide();
+                    }
+                },
+                error: function () {
+                    layer.msg("出错了！");
+                }
+            });
+        </script> -->
+
+        <div class="right myinfo">
+            <form action="" enctype="multipart/form-data" id="infoForm" method="post">
+                <input type="hidden" id="id" name="id" value="92945" />
+                <input name="__RequestVerificationToken" type="hidden" value="v_Mlrk7jZZW1lb92OQL3SARhMcr8JUA7Woak8ZSYY6HmtanIOz0EtBWFwisWuMCeG1k4qSjEEd4QLxx_vhyuIk1fRgg1"
+                />
+                <h2>联系人资料</h2>
+                <div class="info_detail">
+                    <ul>
+                        <li>
+                            <em>姓名</em>
+                            <input class="txt" id="user_name" name="contactName" value="{$user.user_name}" datatype="*2-20">
+                            <span class="Validform_checktip"></span>
+                        </li>
+                        <li>
+                            <em>登录名</em>
+                            <input class="txt" id="login_name" name="contactName" value="{$user.login_name}" readonly="readonly">
+                        </li>
+                        <!-- <li>
+                            <em>性别</em>
+                            <label>
+                                <input type="radio" name="sex" value="1"> 男
+                            </label>&nbsp;&nbsp;
+                            <label>
+                                <input type="radio" name="sex" value="2"> 女
+                            </label>
+                        </li>
+                        <script>
+                            $("input[name=sex][value=1]").attr('checked', true);
+                        </script> -->
+                        <li>
+                            <em>手机</em>
+                            <input class="txt" name="phone" value="{$user.mobile}" readonly="readonly">
+                        </li>
+
+                        <!-- <li>
+                            <em>电子邮箱</em>
+                            <input class="txt" name="email" value="" datatype="e" ignore="ignore">
+                            <span class="Validform_checktip"></span>
+                        </li> -->
+                        <!-- <li>
+                            <em>个人地址</em>
+                            <input class="txt" name="paddress" ignore="ignore">
+                        </li> -->
+                    </ul>
+                </div>
+                <ul>
+                    <li style="padding-left:94px; padding-top:20px;">
+                        <input type="button" value="保存" class="submit saveinfo">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <script>
+        var msg = '';
+        if (msg != '') {
+            layer.msg(msg);
+        }
+        $("#myinfo").addClass('cur');
+
+        //$(".registerform").Validform({tiptype:2,showAllError:true});
+
+        var demo = $("#infoForm").Validform({
+            tiptype: 3,
+            label: ".label",
+            showAllError: true,
+            datatype: {
+                "zh1-6": /^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/
+            },
+        });
+
+        $('.submit').click(function(){
+            var user_name = $('#user_name').val();
+            var login_name = $('#login_name').val();
+            if(user_name.length < 2 || login_name.length < 2 ) {
+                layer.msg('格式错误');
+                return;
+            }
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: '/Home/User/update_personal',
+                data: { user_name: user_name, login_name: login_name},
+                success:function(res){
+                    if(res>0) {
+                        layer.msg('修改成功');
+                    }
+                },
+                error:function(){
+                    layer.msg('异常');
+
+                }
+            })
+        });
+    </script>
+    <br />
+    <include file="Common:foot"/>

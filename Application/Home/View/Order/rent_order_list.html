@@ -1,0 +1,336 @@
+<include file="Common:head" />
+<nav>
+    <div class="comm">
+        <a class="" href="{:U('Index/index')}">
+            首页
+        </a>
+        <a class="" href="{:U('Order/travel')}">
+            在线订车
+        </a>
+        <a class="index" href="{:U('Order/rent_order')}">
+            日租包车
+        </a>
+        <a class="" href="{:U('Order/shuttle_order')}">
+            接机/送机
+        </a>
+    </div>
+</nav>
+<script src="/Application/Home/js/jquery-ui.min.js">
+</script>
+<link href="/Application/Home/css/jquery-ui.css" rel="stylesheet" />
+<script src="/Application/Home/js/dateinput-ch-ZN.js">
+</script>
+<script src="/Application/Home/js/jquery.unobtrusive-ajax.min.js">
+</script>
+<link href="/Application/Home/css/user.css" rel="stylesheet" />
+<script>
+    $(function() {
+    $(".index").addClass("cur");
+    $("#startTime").datepicker();
+    $("#endTime").datepicker();
+
+    var status = "0";
+    if (status == '') {
+        status = 1;
+    }
+    //if (status != 0) {
+    $("dd[name='" + status + "']").find('a').addClass('cur');
+    //$("dd[name=0]").find('a').attr('class', '');
+    //}
+
+});
+</script>
+<style type="text/css">
+    .vo dl dd { width: 60px; overflow: hidden; white-space: nowrap; text-overflow:
+    ellipsis; margin: 10px; padding: 10px; } .title dl dt { width: 180px; }
+    dd a.unlined { color: #CCC; cursor: none; text-decoration: none; } dd a.unlined:hover
+    { color: #CCC; cursor: none; text-decoration: none; } dd a.unlined:link
+    { color: #CCC; cursor: none; text-decoration: none; } dd a.unlined:visited
+    { color: #CCC; cursor: none; text-decoration: none; } dd a.unlined:active
+    { color: #CCC; cursor: none; text-decoration: none; }
+</style>
+<div class="comm uc">
+    <div class="left">
+        <h3>
+            我的运来出行
+        </h3>
+        <h2>
+            个人帐号
+        </h2>
+        <div class="line">
+        </div>
+        <ul>
+            <li>
+                <a href="{:U('Order/order_list?type=0')}" id="">
+                    竞价订单
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Order/order_list?type=1')}" id="myorder">
+                    日租订单
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Order/order_list?type=2')}" id="">
+                    接送机订单
+                </a>
+            </li>
+        </ul>
+        <div class="line">
+        </div>
+        <ul>
+            <li>
+                <a href="{:U('User/personal')}" id="myinfo">
+                    个人资料
+                </a>
+            </li>
+            <!-- <li>
+                <a display="none" href="/User/Travels" id="travels">
+                    子公司/部门管理
+                </a>
+            </li> -->
+            <li>
+                <a href="{:U('User/change_password')}" id="password">
+                    修改密码
+                </a>
+            </li>
+        </ul>
+        <div class="line">
+        </div>
+    </div>
+    <div class="right">
+        <div class="query">
+            <!-- <form action="/User/AjaxSearchPost/1?status=0" data-ajax="true" data-ajax-begin="layer.load();"
+            data-ajax-complete="layer.closeAll(&#39;loading&#39;);" data-ajax-method="Post"
+            data-ajax-mode="replace" data-ajax-update="#orderList" id="searchForm"
+            method="post"> -->
+            <form action="{:U('Order/order_list?type=1')}" id="searchForm" method="get">
+                <dl>
+                    <dt>
+                        预定时间：
+                    </dt>
+                    <dd>
+                        <input type="text" name="start_time" id="startTime" value="{$start_time}">
+                        --
+                        <input type="text" name="end_time" id="endTime" value="{$end_time}">
+                    </dd>
+                    <dd>
+                        <input type="submit" value="查询">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        订单状态：
+                    </dt>
+                    <dd>
+                        <select name="status" id="state" style="width:120px;">
+                            <option value="">
+                                全部
+                            </option>
+                            <option value="1" <if condition="$status eq 1">selected</if>>
+                                待报价
+                            </option>
+                            <option value="2" <if condition="$status eq 2">selected</if>>
+                                已报价
+                            </option>
+                            <option value="3" <if condition="$status eq 3">selected</if>>
+                                已付款
+                            </option>
+                            <option value="4" <if condition="$status eq 4">selected</if>>
+                                已确认
+                            </option>
+                            <option value="5" <if condition="$status eq 5">selected</if>>
+                                已派车
+                            </option>
+                            <option value="6" <if condition="$status eq 6">selected</if>>
+                                已完成
+                            </option>
+                            <option value="6" <if condition="$status eq 7">selected</if>>
+                                已取消
+                            </option>
+                        </select>
+                    </dd>
+                    <script>
+                        $("#state option[value=" + "0" + "]").attr('selected', true);
+//alert($("#state").val());
+                    </script>
+                    <dd>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;订单号查询&nbsp;&nbsp;
+                    </dd>
+                    <input type="text" id="orderNo" name="order_num" value="{$order_num}">
+                </dl>
+            </form>
+        </div>
+        <div id="orderList">
+            <!--最新订单-->
+            <h3>
+                最新订单
+            </h3>
+            <div class="ostate">
+                <dl>
+                    <dd name="<if condition='$status eq 1'>0</if>">
+                        <a href="{:U('Order/order_list?type=1&status=1')}">
+                            待报价
+                        </a>
+                    </dd>
+                    <dd name='<if condition="$status eq 2">0</if>'>
+                        <a href="{:U('Order/order_list?type=1&status=2')}">
+                            已报价
+                        </a>
+                    </dd>
+                    <dd name='<if condition="$status eq 3">0</if>'>
+                        <a href="{:U('Order/order_list?type=1&status=3')}">
+                            已付款
+                        </a>
+                    </dd>
+                    <dd name='<if condition="$status eq 4">0</if>'>
+                        <a href="{:U('Order/order_list?type=1&status=4')}">
+                            已确认
+                        </a>
+                    </dd>
+                    <dd name='<if condition="$status eq 5">0</if>'>
+                        <a href="{:U('Order/order_list?type=1&status=5')}">
+                            已派车
+                        </a>
+                    </dd>
+                    <dd name='<if condition="$status eq 6">0</if>'>
+                        <a href="{:U('Order/order_list?type=1&status=6')}">
+                            已完成
+                        </a>
+                    </dd>
+                    <dd name='<if condition="$status eq 6">0</if>'>
+                        <a href="{:U('Order/order_list?type=1&status=6')}">
+                            已取消
+                        </a>
+                    </dd>
+                    <dd name='<if condition="$status eq ''">0</if>'>
+                        <a href="{:U('Order/order_list?type=1')}">
+                            全部
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="ulist">
+                <ul>
+                    <li class="title">
+                        <dl>
+                            <dt class="orderno">
+                                订单号
+                            </dt>
+                            <dt class="time">
+                                下单时间
+                            </dt>
+                            <dt class="time">
+                                用车时间
+                            </dt>
+                            <dt>
+                                出发城市
+                            </dt>
+                            <dt>
+                                车型
+                            </dt>
+                            <dt>
+                                用车天数
+                            </dt>
+                            <dt class="opera">
+                                订单状态
+                            </dt>
+                        </dl>
+                    </li>
+                    
+                    <li class="vo">
+                        <dl>
+                            <foreach name="order_list" item="list">
+                                <dd class="orderno">
+                                    <a class="aLink" href="{:U('Order/order_detail',array('id'=>$list['id'],'type'=>1))}">
+                                        {$list.order_num}
+                                    </a>
+                                </dd>
+                                <dd class="time">
+                                    {$list.create_time|date="Y-m-d H:i",###}
+                                </dd>
+                                <dd class="time">
+                                    {$list.transport_time|date="Y-m-d H:i",###}
+                                </dd>
+                                <dd>
+                                    {$list.travel_start}
+                                </dd>
+                                <dd>
+                                    {$list.car_name}
+                                </dd>
+                                <dd>
+                                    <if condition="$list.days eq 999">半天
+                                        <elseif condition="$list.days eq 1"/>一天
+                                        <elseif condition="$list.days eq 2"/>两天
+                                        <elseif condition="$list.days eq 3"/>三天
+                                        <elseif condition="$list.days eq 4"/>四天
+                                        <elseif condition="$list.days eq 5"/>五天
+                                    </if>
+                                </dd>
+                                <dd class="opera">
+                                        <span style="color:#009100">
+                                            <if condition="$list.order_status eq 1">
+                                                待报价
+                                            <elseif condition="$list.order_status eq 2" />
+                                                已报价
+                                            <elseif condition="$list.order_status eq 3" />
+                                                已付款
+                                            <elseif condition="$list.order_status eq 4" />
+                                                已确认	
+                                            <elseif condition="$list.order_status eq 5" />
+                                                已派车
+                                            <elseif condition="$list.order_status eq 6" />
+                                                已完成
+                                            <elseif condition="$list.order_status eq 7" />
+                                                已取消
+                                            <elseif condition="$list.order_status eq 8" />
+                                                待付款
+                                            </if>
+                                        </span>
+                                    </dd>
+                            </foreach>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <link href="/Application/Home/css/pagerstyles.css" rel="stylesheet" />
+            <div class="text-center pager">
+                <div style="float:left;">
+                    <if condition="$order_list">
+                            总数量：{$count}条
+
+                    </if>
+                </div>
+                {$page}
+            </div>
+            
+            <script>
+                var status = "0";
+if (status == '') {
+    status = 1;
+}
+//if (status != 0) {
+$("dd[name='" + status + "']").find('a').addClass('cur');
+//$("dd[name=0]").find('a').attr('class', '');
+//}
+            </script>
+        </div>
+    </div>
+</div>
+<script>
+    $("#myorder").addClass('cur');
+var theorder = $("#theOrder").val();
+var theorderNo = $("#theOrderNo").val();
+//alert(theorder);
+if (theorder == 'completed') {
+    $("#theOrder").val('');
+    $("#theOrderNo").val('');
+    layer.msg("<span style='overflow:hidden'>订单已成功<br />订单编号:" + theorderNo + "</span>", {
+        time: 6000,
+        area: ['240px', '70px'],
+        shift: 4 //动画类型
+    });
+}
+</script>
+<br />
+<include file="Common:foot"/>

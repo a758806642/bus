@@ -1,0 +1,132 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>运来出行</title>
+    <link href="/Application/Home/css/css.css" rel="stylesheet" />
+    <script src="/Application/Home/js/jquery-1.8.2.js"></script>
+
+    <style>
+        .cui_hd {
+            margin: 0 auto;
+            padding: 0 10px;
+            border-bottom: 2px solid #5E9FFB;
+            background-color: #FFF;
+        }
+         .payinfo_wx {
+             margin-top: 15px;
+             text-align: center;
+         }
+        .payinfo_wx p {
+            margin-bottom: 50px;
+            font-size: 24px;
+            font-family: "Microsoft Yahei";
+        }
+        .payinfo_wx p .price {
+            margin-left: 8px;
+            font-size: 28px;
+        }
+        .price {
+            font: 20px/1.5 Arial;
+            color: #F60;
+        }
+        .payinfo_wx p .price dfn {
+            vertical-align: 8px;
+        }
+        .price dfn {
+            margin-right: 2px;
+            vertical-align: 6px;
+            font: normal 12px/1.5 Arial;
+            color: #333;
+        }
+        .pay {
+            border: 1px solid #009100;
+            background: #00A600;
+            color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 3px 10px;
+            /* float: right; */
+            margin-right: 18px;
+        }
+        .sure_pay{
+            margin-top: 50px;
+            width: 320px;
+            margin-left: 350px;
+        }
+        #finish{
+            float: right;
+        }
+
+        #back{
+            border: 1px solid #dfd9d9;
+            background: #ebe6e6;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 3px 10px;
+            margin-right: 18px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="comm">
+        <div class="cui_hd">
+            <a href="/"><img src="/Application/Home/img/logo.png" /></a>
+
+        </div>
+        <div class="payinfo_wx">
+            <p>
+                支付金额<span class="price"><dfn></dfn>{$price}</span>，<label id="tipMsg">请使用微信扫描下方二维码完成支付</label>
+            </p>
+            <p>支付成功，点击【支付完成】，后台工作人员将尽快审核</p>
+            <img src="/Application/Home/img/1533029978.png" id="qrCode" alt="二维码">
+            <!-- <input type="hidden" id="orderType" value="1" /> -->
+            <!-- <input type="hidden" id="orderNO" value="81309303786" /> -->
+                
+        </div>
+        <form action="{:U('Order/pay_finish')}" id="searchForm" method="post">
+            <input type="hidden" name="id" value="{$id}">
+            <input type="hidden" name="order_type" value="{$order_type}">
+            <div class="sure_pay">
+                <input type="button" name="nothing" id="back" onclick="javascript:history.back(-1)"  value="返回">
+                <!-- <a href="{:U('Order/pay_finish',array('price'=>$order_data['order_price']))}" id="finish" class="pay" >支付完成</a> -->
+                <input type="submit" name="finish" id="finish" class="pay" value="支付完成">
+            </div>
+        </form>
+
+    </div>
+    <script>
+    // $(document).ready(function () {
+    //     setInterval("ChaekPayed()", 3000);
+    // });
+
+    // function ChaekPayed() {
+    //     var url = "/Common/CheckOrderPayed?orderType=1&orderNO=81309303786&onLinePayType=2";
+    //     $.ajax({
+    //         url: url,
+    //         type: "GET",
+    //         dataType: "json",
+    //         data: "",
+    //         success: function (data) {
+    //             if (data == true) {
+    //                 if ($("#orderType").val() == '1')
+    //                     window.location.href = "/User/DayRentDetail/" + $("#orderNO").val(); //页面跳转
+    //                 else if ($("#orderType").val() == '2')
+    //                     window.location.href = "/User/TransferDetail/" + $("#orderNO").val(); //页面跳转
+    //             }
+    //         },
+    //         error: function () {
+    //             //alert("请求订单状态出错");
+    //         }
+    //     });
+    // }
+</script>
+</body>
+</html>

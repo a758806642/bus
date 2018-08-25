@@ -1,0 +1,1526 @@
+[ 2018-08-20T12:04:27+08:00 ] 111.40.30.232 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Home/Controller/IndexController.class.php 第 6 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Home/Controller/IndexController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-08-20T12:04:32+08:00 ] 111.40.30.232 /index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 152 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2018-08-20T12:04:47+08:00 ] 111.40.30.232 /index.php/Home/Index/login_send.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `tp_users` WHERE (  `login_name` = 'a758806642' OR `mobile` = 'a758806642' ) AND `password` = 'f5bb0c8de146c67b44babbf4e6584cc0' AND `admin_type` = 0 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /www/wwwroot/bus.sz25.net/Application/Home/Controller/IndexController.class.php 第 56 行.
+
+[ 2018-08-20T12:04:47+08:00 ] 111.40.30.232 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_users` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-08-20T12:04:47+08:00 ] 111.40.30.232 /index.php/Home/Index/images/zoom-tblr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+
+[ 2018-08-20T12:04:50+08:00 ] 111.40.30.232 /index.php/Home/Order/travel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%0%' AND `is_show` = 0  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-08-20T12:04:50+08:00 ] 111.40.30.232 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+
+[ 2018-08-20T12:05:03+08:00 ] 111.40.30.232 /index.php/Home/Order/travel_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_users` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: total /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: transport_data /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/f06e0082767268a63a80f797955ca6a3.php 第 274 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2018-08-20T12:05:05+08:00 ] 111.40.30.232 /index.php/Home/Order/travel_order_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0167s ]
+SQL: INSERT INTO `tp_order` (`user_id`,`car_id`,`order_num`,`rental_type`,`order_type`,`car_number`,`order_level`,`travel_username`,`travel_mobile`,`transport_time`,`remark`,`order_status`,`create_time`) VALUES ('24','2','Y1534737905','0','0','6','0','shilei','13206747574','1534982400','123','1','1534737905') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_busline` [ RunTime:0.0072s ]
+SQL: INSERT INTO `tp_busline` (`order_id`,`transport_time`,`travel_start`,`start_address`,`fromjw`,`fromaddr`,`travel_end`,`end_address`,`tojw`,`toaddr`) VALUES ('95','1534982400','天津','银河一路','38.964233,117.714702','天津市滨海新区','天津','二道沟村','38.917532,117.475282','天津市津南区') [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2018-08-20T12:05:07+08:00 ] 111.40.30.232 /index.php/Home/Order/order_list/type/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined index: status /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '0' LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT o.*,c.car_name FROM tp_order as o INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = '0' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-08-20T12:06:02+08:00 ] 117.185.117.56 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Home/Controller/IndexController.class.php 第 6 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Home/Controller/IndexController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-08-20T12:06:36+08:00 ] 117.144.246.149 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Home/Controller/IndexController.class.php 第 6 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Home/Controller/IndexController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2018-08-20T12:10:01+08:00 ] 121.51.32.144 /index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 152 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2018-08-20T12:10:02+08:00 ] 120.204.17.72 /index.php/Home/Order/order_list/type/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-08-20T12:13:07+08:00 ] 121.51.32.144 /index.php/Home/Order/travel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2018-08-20T12:13:44+08:00 ] 111.40.30.232 /index.php/Home/Order/travel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%0%' AND `is_show` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-08-20T12:13:45+08:00 ] 111.40.30.232 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-08-20T12:14:20+08:00 ] 111.40.30.232 /index.php/Home/Order/travel_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_users` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: total /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: transport_data /www/wwwroot/bus.sz25.net/Application/Runtime/Cache/Home/f06e0082767268a63a80f797955ca6a3.php 第 274 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-08-20T12:14:41+08:00 ] 111.40.30.232 /index.php/Home/Order/travel_order_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0005s ]
+SQL: INSERT INTO `tp_order` (`user_id`,`car_id`,`order_num`,`rental_type`,`order_type`,`car_number`,`order_level`,`travel_username`,`travel_mobile`,`transport_time`,`remark`,`order_status`,`create_time`) VALUES ('24','1','O1534738481','1','0','3','0','shilei','13206747574','1534982400','321','1','1534738481') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_busline` [ RunTime:0.0003s ]
+SQL: INSERT INTO `tp_busline` (`order_id`,`transport_time`,`travel_start`,`start_address`,`fromjw`,`fromaddr`,`travel_end`,`end_address`,`tojw`,`toaddr`) VALUES ('96','1534982400','上海','三塘村','31.088199,120.971912','上海市青浦区塘联中心路','深圳','育才第二小学','22.503036,113.936751','深圳市南山区荔园路94号') [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2018-08-20T12:14:45+08:00 ] 111.40.30.232 /index.php/Home/Order/order_list/type/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined index: status /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num /www/wwwroot/bus.sz25.net/Application/Home/Controller/OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '0' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT o.*,c.car_name FROM tp_order as o INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = '0' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2018-08-20T12:18:39+08:00 ] 120.204.17.73 /index.php/Home/Order/travel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+
+[ 2018-08-20T15:52:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_users` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:52:53+08:00 ] 127.0.0.1 /index.php/Home/Order/travel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%0%' AND `is_show` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:52:53+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:53:09+08:00 ] 127.0.0.1 /index.php/Home/Order/travel_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_users` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: total D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 29 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: transport_data D:\upupw\htdocs\Application\Runtime\Cache\Home\f06e0082767268a63a80f797955ca6a3.php 第 274 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:53:13+08:00 ] 127.0.0.1 /index.php/Home/Order/travel_order_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `tp_order` (`user_id`,`car_id`,`order_num`,`rental_type`,`order_type`,`car_number`,`order_level`,`travel_username`,`travel_mobile`,`transport_time`,`remark`,`order_status`,`create_time`) VALUES ('24','2','X1534751593','0','0','4','0','shilei','13206747574','1534896000','123321','1','1534751593') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_busline` [ RunTime:0.0080s ]
+SQL: INSERT INTO `tp_busline` (`order_id`,`transport_time`,`travel_start`,`start_address`,`fromjw`,`fromaddr`,`travel_end`,`end_address`,`tojw`,`toaddr`) VALUES ('126','1534896000','天津','银河一路','38.963349,117.714087','天津市滨海新区','上海','田林十三村','31.179588,121.430925','上海市徐汇区柳州路田林十三村') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:53:14+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.*,c.car_name FROM tp_order as o INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = '0' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:58:57+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.*,c.car_name,b.travel_start,b.start_address,b.travel_end,b.end_address FROM tp_order as o INNER JOIN tp_busline as b on b.order_id=o.id INNER JOIN tp_car as c on c.id=o.car_id  WHERE o.user_id = '24' AND o.order_type = '1' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:58:59+08:00 ] 127.0.0.1 /index.php/Home/Order/travel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%0%' AND `is_show` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:58:59+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:01+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_users` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:01+08:00 ] 127.0.0.1 /index.php/Home/Index/images/zoom-tblr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-20T15:59:01+08:00 ] 127.0.0.1 /index.php/Home/Order/rent_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:02+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:02+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T15:59:02+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0010s ]
+
+[ 2018-08-20T15:59:02+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T15:59:04+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_car` WHERE `id` IN ('2') AND `is_show` = 0  [ RunTime:0.0000s ]
+
+[ 2018-08-20T15:59:05+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_car` WHERE `id` IN ('2','5') AND `is_show` = 0  [ RunTime:0.0000s ]
+
+[ 2018-08-20T15:59:07+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_car` WHERE `id` IN ('5') AND `is_show` = 0  [ RunTime:0.0010s ]
+
+[ 2018-08-20T15:59:09+08:00 ] 127.0.0.1 /Home/Order/rent_order_send?id=5&cityName=%20%E5%93%88%E5%B0%94%E6%BB%A8&days=1&date=2018-08-21&hour=08&minute=00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`car_name`,`car_price` FROM `tp_car` WHERE ( id='5' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_users` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:09+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:09+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T15:59:32+08:00 ] 127.0.0.1 /index.php/Home/Order/rent_order_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: INSERT INTO `tp_order` (`user_id`,`car_id`,`order_num`,`order_type`,`travel_username`,`travel_mobile`,`transport_time`,`days`,`remark`,`order_status`,`create_time`) VALUES ('24','5','R1534751972','1','shilei','13206747574','1534809600','1','123','1','1534751972') [ RunTime:0.0000s ]
+NOTIC: [2] Illegal string offset 'travel_start' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 337 行.
+NOTIC: [2] Illegal string offset 'travel_address' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 338 行.
+NOTIC: [2] Illegal string offset 'fromjw' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 339 行.
+NOTIC: [2] Illegal string offset 'fromaddr' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 340 行.
+NOTIC: [2] Illegal string offset 'travel_end' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 341 行.
+NOTIC: [2] Illegal string offset 'end_address' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 342 行.
+NOTIC: [2] Illegal string offset 'tojw' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 343 行.
+NOTIC: [2] Illegal string offset 'toaddr' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `tp_busline` [ RunTime:0.0080s ]
+SQL: INSERT INTO `tp_busline` (`order_id`,`transport_time`,`travel_start`,`start_address`,`fromjw`,`fromaddr`,`travel_end`,`end_address`,`tojw`,`toaddr`) VALUES ('127','1534809600','\"','\"','\"','\"','\"','\"','\"','\"') [ RunTime:0.0000s ]
+NOTIC: [2] Illegal string offset 'total' D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 349 行.
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0080s ]
+SQL: SELECT `car_price`,`car_name` FROM `tp_car` WHERE ( id='5' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-20T15:59:39+08:00 ] 127.0.0.1 /index.php/Home/Order/wxpay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: price D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 379 行.
+NOTIC: [8] Undefined index: id D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 380 行.
+NOTIC: [8] Undefined index: type D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 381 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: order_data D:\upupw\htdocs\Application\Runtime\Cache\Home\86c304e9291f28a5c17d3a966db193ac.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-20T15:59:40+08:00 ] 127.0.0.1 /index.php/Home/Order/pay_finish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: UPDATE `tp_order` SET `order_status`='3' WHERE ( id='' ) [ RunTime:0.0010s ]
+
+[ 2018-08-20T15:59:40+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: type D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 113 行.
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.*,c.car_name FROM tp_order as o INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = null ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:44+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.*,c.car_name,b.travel_start,b.start_address,b.travel_end,b.end_address FROM tp_order as o INNER JOIN tp_busline as b on b.order_id=o.id INNER JOIN tp_car as c on c.id=o.car_id  WHERE o.user_id = '24' AND o.order_type = '1' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-20T15:59:53+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.*,c.car_name FROM tp_order as o INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = '0' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:54+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.*,c.car_name,b.travel_start,b.start_address,b.travel_end,b.end_address FROM tp_order as o INNER JOIN tp_busline as b on b.order_id=o.id INNER JOIN tp_car as c on c.id=o.car_id  WHERE o.user_id = '24' AND o.order_type = '1' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:55+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT o.*,c.car_name,b.travel_start,b.start_address,b.travel_end,b.end_address FROM tp_order as o INNER JOIN tp_busline as b on b.order_id=o.id INNER JOIN tp_car as c on c.id=o.car_id  WHERE o.user_id = '24' AND o.order_type = '1' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:57+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.*,c.car_name FROM tp_order as o INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = '0' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:58+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '2' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT o.*,c.car_name,b.travel_start,b.start_address,b.travel_end,b.end_address,b.service_type FROM tp_order as o INNER JOIN tp_busline as b on b.order_id=o.id INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = '2' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T15:59:59+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT o.*,c.car_name,b.travel_start,b.start_address,b.travel_end,b.end_address FROM tp_order as o INNER JOIN tp_busline as b on b.order_id=o.id INNER JOIN tp_car as c on c.id=o.car_id  WHERE o.user_id = '24' AND o.order_type = '1' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T16:00:00+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '0' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT o.*,c.car_name FROM tp_order as o INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = '0' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T16:59:41+08:00 ] 127.0.0.1 /index.php/Home/Order/order_list/type/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 114 行.
+NOTIC: [8] Undefined index: start_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 116 行.
+NOTIC: [8] Undefined index: end_time D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_num D:\upupw\htdocs\Application\Home\Controller\OrderController.class.php 第 118 行.
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM tp_order as o WHERE o.user_id = '24' AND o.order_type = '0' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT o.*,c.car_name FROM tp_order as o INNER JOIN tp_car as c on c.id = o.car_id  WHERE o.user_id = '24' AND o.order_type = '0' ORDER BY o.create_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T16:59:42+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T16:59:43+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T16:59:51+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_users` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T16:59:51+08:00 ] 127.0.0.1 /index.php/Home/Index/images/zoom-tblr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-20T17:01:03+08:00 ] 127.0.0.1 /index.php/Home/Order/travel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%0%' AND `is_show` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:04+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:28+08:00 ] 127.0.0.1 /index.php/Home/Order/shuttle_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-08-20T17:01:28+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:28+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%2%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:01:29+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:29+08:00 ] 127.0.0.1 /Home/Index/detail_address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:32+08:00 ] 127.0.0.1 /index.php/Home/Order/rent_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:32+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:32+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0010s ]
+
+[ 2018-08-20T17:01:32+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:01:32+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:01:34+08:00 ] 127.0.0.1 /index.php/Home/Order/shuttle_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:34+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:34+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%2%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:01:35+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:35+08:00 ] 127.0.0.1 /Home/Index/detail_address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-20T17:01:35+08:00 ] 127.0.0.1 /index.php/Home/Order/rent_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:35+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:01:35+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:01:35+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0010s ]
+
+[ 2018-08-20T17:01:35+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:03:16+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0010s ]
+
+[ 2018-08-20T17:03:16+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:03:17+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0010s ]
+
+[ 2018-08-20T17:03:17+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0010s ]
+
+[ 2018-08-20T17:03:19+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0010s ]
+
+[ 2018-08-20T17:03:19+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:03:21+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:03:21+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:03:22+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:03:22+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:03:24+08:00 ] 127.0.0.1 /Home/Order/car_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `car_type` LIKE '%1%' AND `is_show` = 0  [ RunTime:0.0010s ]
+
+[ 2018-08-20T17:03:24+08:00 ] 127.0.0.1 /Home/Order/car_type_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_car` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_car` WHERE `is_show` = 0 AND `car_type` LIKE '%1%'  [ RunTime:0.0000s ]
+
+[ 2018-08-20T17:57:51+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:57:57+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-20T17:58:38+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:59:24+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-08-20T17:59:51+08:00 ] 127.0.0.1 /Home/Index/city
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+

@@ -1,0 +1,310 @@
+<include file="Common:head" />
+        <nav>
+            <div class="comm">
+                <a href="{:U('Index/index')}">首页</a>
+                <a href="{:U('Order/travel')}">在线订车</a>
+                <a class="index" href="{:U('Order/rent_order')}">日租包车</a>
+                <a href="{:U('Order/shuttle_order')}">接机/送机</a>
+        </nav>
+        <link href="/Application/Home/css/order.css" rel="stylesheet" />
+        <script src="/Application/Home/js/jquery-ui.min.js"></script>
+        <link href="/Application/Home/css/jquery-ui.css" rel="stylesheet" />
+        <script src="/Application/Home/js/dateinput-ch-zn.js"></script>
+        <script src="/Application/Home/js/dayrentproduct.js"></script>
+        <script>$(".day").addClass("cur");
+
+            $(function() {
+                var hh = (parseInt(new Date().Format("hh")) - 11).toString();
+                var date = "<?php echo date('Y-m-d',strtotime('+1 day'));?>";
+                // console.log(date);
+                $("#dayrent").addClass("cur");
+                $("#cityID").val(60);
+                $("#cityName").val("哈尔滨");
+                $("#days").val(1);
+                $('.hours').append(hourstxt);
+                $('.minutes').append(minutestxt);
+                $('#datepicker4').val(date);
+
+                if (!ValidateTime()) {
+                    var hh = (parseInt(new Date().Format("hh")) - 11).toString();
+                    if (hh.length < 2) hh = "0" + hh;
+                    $('#hours').val(hh);
+                }
+
+                InitData();
+
+                $('.drop-down-icon').live('click',
+                function(e) {
+                    $(".result").hide();
+                    e.stopPropagation();
+                    $(this).children('.citylist').html(citylist).toggle();
+                    $('.citylist .menu li').bind('click',
+                    function() {
+                        $(this).addClass('hover').siblings().removeClass('hover');
+                        $('.citylist .main ul').eq($('.menu li').index(this)).show().siblings().hide();
+                        return false;
+                    });
+                    $('.citylist .main a').bind('click',
+                    function() {
+                        var city = $(this).html();
+                        var cityID = $(this).attr("cid");
+                        $(this).parents('.citylist').prev().val(city);
+                        $(this).parents('.citylist').prev().prev().val(cityID);
+                        //var city = $(this).html();
+                        //$(this).parents('.citylist').prev().val(city);
+                        InitData();
+                        $('.citylist').hide();
+                        $(this).parents('.select-city').next().find('.input').val('');
+
+                        return false;
+                    });
+
+                });
+                
+                
+
+                if ($.browser.msie) {
+                    $('input:checkbox').click(function() {
+                        this.blur();
+                        this.focus();
+                    });
+                }
+                // $("#filter ul.cl_filter li.clearfix label input").off().on('click',function(){
+                //     if($(this).hasClass('unlimit')){
+                //         var label = $(this).parent();
+                //         if($(this).is(':checked')){
+                //             $("#filter ul.cl_filter li.clearfix label input").each(function(){
+                //                 if(!$(this).hasClass('unlimit')){
+                //                     $(this).parent().removeClass('active');
+                //                     $(this).prop('checked',false);
+                //                 }
+                //             });
+                //             label.addClass('active');
+                //         }else{
+                //             label.removeClass('active');
+                //         }
+                //     }else{
+                //         $('.unlimit').prop('checked',false).parent().removeClass('active');
+                //         var label = $(this).parent();
+                //         if($(this).is(':checked')){
+
+                //             label.addClass('active');
+                //         }else{
+                //             label.removeClass('active');
+                //         }
+                //     }
+                // });
+            });
+            </script>
+        <link href="/Application/Home/css/tip-yellow.css" rel="stylesheet" />
+        <link href="/Application/Home/css/tip-yellowsimple.css" rel="stylesheet" />
+        <script src="/Application/Home/js/jquery.poshytip.js"></script>
+        <!-- <style>
+            .dailyhide { display: none; }
+            .dailyextend { display: block; }
+            #filter ul li label.active{background: #009100;}
+        </style> -->
+        <div class="comm step">
+            <dl>
+                <dt>
+                    <span>1.</span>选择车型
+                    <em></em>
+                    <i>
+                    </i>
+                </dt>
+                <dd>
+                    <span>2.</span>填写乘车人信息
+                    <em></em>
+                    <i>
+                    </i>
+                </dd>
+                <dd>
+                    <span>3.</span>支付
+                    <em></em>
+                    <i>
+                    </i>
+                </dd>
+                <dd>
+                    <span>4.</span>派车
+                    <em></em>
+                    <i>
+                    </i>
+                </dd>
+                <dd>
+                    <span>5.</span>用车完成
+                    <em></em>
+                    <i>
+                    </i>
+                </dd>
+            </dl>
+        </div>
+        <div class="comm book">
+            <div class="left" id="side">
+                <ul>
+                    <li id="lefttravel">
+                        <a href="{:U('Order/travel')}" id="jj">旅游包车</a></li>
+                    <li id="lefttravel">
+                        <a href="{:U('Order/rent_order')}" id="dayrent">日租包车</a></li>
+                </ul>
+            </div>
+            <div class="right" style="width:760px" id="divmaincontent">
+                <dl>
+                    <dt>出发城市</dt>
+                    <dd class="select-city">
+                        <div class="drop-down-icon">
+                            <input type="hidden" name=cityID id="cityID" />
+                            <input onfocus=" this.blur(); " style="width:80px;height:18px" readonly="readonly" type="text" class="txt city" value="" id="cityName" name="travel_start">
+                            <div class="citylist"></div>
+                        </div>
+                    </dd>
+                    <dt>用车时间</dt>
+                    <dd>
+                        <input type="text" id="datepicker4" name="transport_time" readonly="readonly" onchange="InitData()" value="" class="txt date">
+                        <select class="select hours" name="hours" id="hours" onchange="InitData()"></select>:
+                        <select class="select minutes" name="minutes" id="minutes" onchange="InitData()"></select></dd>
+                    <div class="cartlist">
+                        <ul id="condition" class="condition">
+                            <li>
+                                <label style="padding-left: 25px;">天数</label>
+                                <select class="select" name="days" id="days" style="width:130px" onchange="InitData()">
+                                    <option onfocus=" this.blur(); " value="999">半天</option>
+                                    <option onfocus=" this.blur(); " value="1">一天</option>
+                                    <option onfocus=" this.blur(); " value="2">两天</option>
+                                    <option onfocus=" this.blur(); " value="3">三天</option>
+                                    <option onfocus=" this.blur(); " value="4">四天</option>
+                                    <option onfocus=" this.blur(); " value="5">五天</option></select>
+                                <input type="button" class="addday" id="searchProduct" value="搜索" style="float: right"></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </dl>
+                <div id="filter" style="display: block;">
+                    <ul class="cl_filter">
+                        <li class="clearfix vehicle-list">
+                            <span class="fl">车型</span>
+                            <a class="fl all current" href="javascript:void(0);" onclick="AllClick(this, 1)">不限</a>
+                            <div class="fl filter_list"></div>
+                            <!-- <a class="fl all current" href="javascript:void(0);" >不限</a> -->
+                            <!-- <label ><input type="checkbox" name="carType" value="" class="unlimit">不限</label>
+                            <label ><input type="checkbox" name="carType" value="" >1座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >2座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >2座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >2座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >2座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >2座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >2座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >2座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >2座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >3座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >4座小巴</label>
+                            <label ><input type="checkbox" name="carType" value="" >5座小巴</label> -->
+                            <!-- <input type="checkbox" name="car_id[]" value="经济型" onmouseover="this.style.cursor='hand'">经济型 -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- <script>
+                    $('.checkbox').focus(function(){
+                        // $('.checkbox').css("background:#f60","border:1px solid #fe8101","color:#fff");
+                        $(".checkbox").addClass("fl all current");
+                    });
+                </script> -->
+                <!-- <style>
+                    input:checked + label {
+                        background:#f60;
+                        border:1px solid #fe8101;
+                        color:#fff;
+                    }
+
+                </style> -->
+                <div class="plist">
+                    <div style="padding: 10px; text-align: center;">
+                        <img src="/Application/Home/img/onload.gif" />加载中...
+                    </div>
+                    <!-- <ul>
+                        <li class="title">
+                            <dl>
+                                <dt class="carType">
+                                    <img src="' + obj.CarPic + '" style="width: 100px" />
+                                </dt>
+                                <dt class="info">
+                                    <big>经济型
+                                        <span>
+                                            <i class="passenger xl"></i><dfn>人数</dfn>
+                                        </span>
+                                        <span>
+                                            <i class="baggage xl"></i><dfn>行李数</dfn>
+                                        </span>
+                                    </big>等级名称&nbsp;等同级车
+                                </dt>
+                                <dt class="price">
+                                    <dfn>¥<big>555 </big></dfn>起
+                                </dt>
+                            </dl>
+                        </li>
+                        <li class="vo">
+                            <dl>
+                                <dd class="img">
+                                    <img src="/Application/Home/img/logo.png" style="width:100px" /><br/>
+                                    <h3>运来出行</h3>
+                                </dd>
+                                <dd class="info">
+                                    <em>市内/跨域包车</em>
+                                </dd>
+                                <dd class="score">
+                                    <big>4.5</big>/5分
+                                </dd>
+                                <dd class="price">
+                                    <span>
+                                        <dfn>¥<big>555</big></dfn><br />
+                                        <em class="price-desc">含100公里8小时</em><div class="poTip tip_icon xl points-ltlb" title="含100公里8小时，超公里2.5元/公里，超时长30元/小时"></div>
+                                    </span>
+                                </dd>
+                                <dd class="dyd">
+                                    <a href="javascript:void(0);" onclick="Reserve(' + obj.ID + ')" class="yd">点击预定</a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul> -->
+
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <script>
+        
+        // $(function(){
+        //     // var a = $('#cityName').attr('value');
+        //     $('.drop-down-icon').click(function(){
+        //         // console.log(123);
+		//         // var url = $("form[name='jd_screenForm']").attr('action');
+        //     });
+        // });
+        
+        
+
+        
+        $(".date").each(function() {
+                $(this).datepicker({
+                    minDate: new Date()
+                });
+            });
+
+            $("#searchProduct").bind('click',
+            function() {
+                InitData();
+            });
+
+            function checkLogin() {
+
+                var user_id = "{$_SESSION['user_id']}";
+                if(!user_id) {
+                    layer.msg('请先登录');
+                    return false;
+                }
+                return true;
+
+            }
+            </script>
+        <br />
+        <include file="Common:foot" />

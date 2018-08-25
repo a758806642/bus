@@ -1,0 +1,67 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <script src="/Application/Home/js/jquery-1.8.2.min.js"></script>
+    <style>
+        body {
+            font-size: 13px;
+            font-family: '微软雅黑';
+            line-height: 2em;
+            padding: 0 10px;
+        }
+        li {
+            list-style-type: none;
+        }
+    </style>
+
+    <script src="/Application/Home/js/common.js"></script>
+    <script>
+        var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+        $('#closeIframe').click(function () {
+            parent.layer.close(index);
+        });
+        $("#aa").click(function () {
+            alert(2);
+        });
+    </script>
+    <link href="/Application/Home/css/user.css" rel="stylesheet" />
+</head>
+    <body>
+        <p class="adl_tit">预订须知</p>
+        <ul class="adl_notice">
+            <li>
+                <p class="item clearfix"><b class="fl">套餐包含:</b>包含(8小时100公里)/天 × 1天，司机服务费、车辆日租金、燃油费、司机餐饮费（市内包含）、司机住宿费（市内包含）
+            </li>
+            <li class="item clearfix">
+                <b class="fl">套餐不含:</b>由乘客临时增加用车需求而产生的费用按如下标准收费。
+                <a class="fee-detail-btn on" style="cursor: pointer;">详情<i></i></a>
+            </li>
+            <ul class="other-fee" style="display: none; list-style: none; -webkit-padding-start: 0px;">
+                <li class="fee-item"><span class="til">超时长费</span><span class="content">当日用车总时长超过8小时后，乘客主动要求增加用车时长，将按30.00元/小时标准收取超时长费。</span></li>
+                <li class="fee-item"><span class="til">超公里费</span><span class="content">当日用车总里程超过100公里后，乘客主动要求增加用车里程，将按2.50元/公里收取超公里费。</span></li>
+                <li class="fee-item"><span class="til">长途费（空驶费）</span><span class="content">上车地点距离下车地点>50公里以上，按（实际距离公里-50公里）× 1.00元/公里计费。司机出示上下车距离公里数及费用明细签单收取费用 。</span></li>
+                <li class="fee-item"><span class="til">住宿费</span><span class="content">如需多天包车且让司机异地过夜，由乘客与司机协商为其代订住宿。或按300元/晚标准让司机自行住宿。</span></li>
+                <li class="fee-item"><span class="til">餐饮费</span><span class="content">市内1日包车无需支付餐饮费。跨城或多天包车请与司机协商为司机提供餐饮，或按30元/餐支付司机自行用餐。</span></li>
+                <li class="fee-item"><span class="til">停车费</span><span class="content">用车期间按实际发生额由乘客自付停车费，现场索取小票。</span></li>
+                <li class="fee-item"><span class="til">过路过桥费</span><span class="content">同城服务按实际发生额由乘客自付路桥费，跨城服务如需司机单独空驶回城所需路桥费由乘客垫付。</span></li>
+                <li class="fee-item"><span class="til">夜间服务费</span><span class="content">在22:00--次日06：00用车期间，将额外收取1元/分钟的夜间服务费，最高收取300元。</span></li>
+            </ul>
+            <li class="notice" style="display: none;">注：如产生套餐不含费用项请在服务结束后，将钱（RMB或等额外币）面付司机。严禁司机额外乱收费，如发现可联系巴士专车客服核实退还。</li>
+
+
+            <li class="item clearfix"><b class="fl">取消订单:</b>在用车时间前24小时可免费取消订单。超过最晚取消时间，将收取您全额违约金。部分日期因车源紧张，在无法安排车辆且不耽误您出行的情况下，系统将自动为您免费取消订单。</li>
+            <li class="item clearfix"><b class="fl">开具发票:</b>如需发票，由巴士专车统一开具。请在服务完成后至订单详情页填写开票信息，开票总金额包含超时超公里费用（发票金额不含礼品卡支付金额以及客人自付第三方停车、路桥费金额）。</li>
+            <li class="item clearfix"><b class="fl">上车凭证:</b>您可将收到的巴士专车派车短信向司机出示并上车。</li>
+            <li class="item clearfix"><b class="fl">用车范围:</b>本产品用车服务结束下车地点可在市内或异地任意地点，用车期间可途径郊区或跨城用车（如需跨省行驶则要提前1周预订并备注说明，否则可能导致安排车辆无跨省营运资质）</li>
+            <li class="item clearfix"><b class="fl">套餐期限:</b>预订多日包车，每日套餐内容不累计，当日24点仍未使用自动作废。建议每日最长包车时长不超过12小时。<br><br></li>
+        </ul>
+        <!--<button id="closeIframe">关闭iframe</button>
+            <p><input type="button" id="aa" value="同意"/></p>-->
+
+    </body>
+</html>
