@@ -1,0 +1,12 @@
+测试服务器控制台地址：http://zp.sz25.net:8888 账号：chaoyuz@sina.com 密码：Comchao001@
+测试服务器GitLab地址：http://zp.sz25.net:8099 账号密码自己注册，每个人的SHH秘钥发给我
+域名统一使用：*.sz25.net
+
+
+
+和顺成文化传播
+邮箱：
+	hscwhcb@163.com
+	heshuncheng
+公众平台：hscwhcb@163.com
+		heshuncheng163
